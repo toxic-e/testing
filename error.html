@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — Page Not Found | Techofy Cloud</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#ec4899" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{
+      --pink:#f472b6;
+      --pink-deep:#ec4899;
+      --pink-border:rgba(236,72,153,0.18);
+      --text:#111;
+      --text-2:#555;
+      --text-3:#999;
+      --ease:cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    html,body{
+      min-height:100%;
+      font-family:'Sora',sans-serif;
+      background:#fff;
+      color:var(--text);
+      overflow-x:hidden;
+    }
+
+    /* Background */
+    .bg{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;}
+    .orb{position:absolute;border-radius:50%;animation:floatOrb 8s ease-in-out infinite;}
+    .orb-1{width:480px;height:480px;background:radial-gradient(circle,rgba(236,72,153,.13),transparent 70%);top:-100px;right:-80px;}
+    .orb-2{width:360px;height:360px;background:radial-gradient(circle,rgba(192,38,211,.1),transparent 70%);bottom:-60px;left:-60px;animation-delay:3s;}
+    .orb-3{width:240px;height:240px;background:radial-gradient(circle,rgba(244,114,182,.11),transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);animation-delay:5s;}
+    .grid{position:fixed;inset:0;z-index:0;pointer-events:none;background-image:linear-gradient(rgba(244,114,182,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(244,114,182,.03) 1px,transparent 1px);background-size:56px 56px;}
+    @keyframes floatOrb{0%,100%{transform:translateY(0);}50%{transform:translateY(-18px);}}
+
+    /* Floating server cards — PC only */
+    .card-float{
+      position:fixed;width:176px;z-index:2;pointer-events:none;
+      background:#fff;border:1px solid rgba(236,72,153,.14);
+      border-radius:16px;padding:14px 16px;
+      box-shadow:0 8px 32px rgba(0,0,0,.07);
+    }
+    .cf-l{left:44px;top:50%;transform:translateY(-60%);animation:floatCard 6s ease-in-out infinite;}
+    .cf-r{right:44px;top:50%;transform:translateY(-40%);animation:floatCard 6s ease-in-out infinite;animation-delay:2s;}
+    @keyframes floatCard{0%,100%{margin-top:0;}50%{margin-top:-10px;}}
+    @media(max-width:900px){.card-float{display:none;}}
+    .cf-label{font-size:9.5px;font-weight:700;color:var(--text-3);letter-spacing:.9px;text-transform:uppercase;margin-bottom:9px;}
+    .cf-row{display:flex;justify-content:space-between;margin-bottom:5px;}
+    .cf-k{font-size:11px;color:var(--text-2);}
+    .cf-v{font-size:11px;font-weight:600;color:var(--text);}
+    .cf-status{display:inline-flex;align-items:center;gap:5px;font-size:9.5px;font-weight:600;color:#16a34a;background:#f0fdf4;border:1px solid #bbf7d0;padding:3px 8px;border-radius:999px;margin-top:7px;}
+    .cf-dot{width:5px;height:5px;border-radius:50%;background:#16a34a;animation:pulse 2s ease-in-out infinite;}
+
+    /* Page */
+    .page{
+      position:relative;z-index:1;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+      padding:0 24px 60px;
+    }
+
+    /* Logo — fixed distance from top */
+    .logo{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:18px;font-weight:800;letter-spacing:-.4px;
+      color:var(--text);text-decoration:none;
+      margin-top:48px;
+      animation:fadeUp .5s var(--ease) both;
+    }
+    .logo-dot{
+      width:8px;height:8px;border-radius:50%;flex-shrink:0;
+      background:linear-gradient(135deg,var(--pink-deep),#c026d3);
+    }
+
+    /* Badge — small gap after logo */
+    .badge{
+      display:inline-flex;align-items:center;gap:6px;
+      font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;
+      color:var(--pink-deep);
+      background:rgba(236,72,153,.08);
+      border:1px solid var(--pink-border);
+      padding:5px 14px;border-radius:999px;
+      margin-top:20px;
+      animation:fadeUp .5s var(--ease) .12s both;
+    }
+    .badge-dot{width:6px;height:6px;border-radius:50%;background:var(--pink-deep);flex-shrink:0;animation:pulse 1.5s ease-in-out infinite;}
+    @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(.75);}}
+
+    /* Centre block — flex-grow so it fills remaining height */
+    .centre{
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      max-width:460px;
+      padding-top:8px;
+    }
+
+    /* Big 404 */
+    .num{
+      font-size:clamp(100px,24vw,180px);
+      font-weight:800;
+      letter-spacing:-6px;
+      line-height:1;
+      background:linear-gradient(135deg,var(--pink-deep) 0%,#c026d3 55%,#f472b6 100%);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      background-clip:text;
+      position:relative;
+      animation:fadeUp .55s var(--ease) .22s both;
+      user-select:none;
+    }
+    /* Glitch effect */
+    .num::before,.num::after{
+      content:'404';
+      position:absolute;inset:0;
+      background:linear-gradient(135deg,var(--pink-deep),#c026d3,#f472b6);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      background-clip:text;
+    }
+    .num::before{animation:g1 3.5s infinite;clip-path:polygon(0 14%,100% 14%,100% 38%,0 38%);}
+    .num::after {animation:g2 3.5s infinite;clip-path:polygon(0 62%,100% 62%,100% 80%,0 80%);}
+    @keyframes g1{0%,90%,100%{transform:translate(0);}92%{transform:translate(-3px,1px);}94%{transform:translate(3px,-1px);}96%{transform:translate(-2px,0);}}
+    @keyframes g2{0%,88%,100%{transform:translate(0);}90%{transform:translate(3px,2px);}93%{transform:translate(-3px,-1px);}95%{transform:translate(2px,0);}}
+
+    /* 1 line gap then title */
+    .title{
+      font-size:clamp(19px,4.5vw,26px);
+      font-weight:700;color:var(--text);letter-spacing:-.4px;
+      margin-top:16px;
+      animation:fadeUp .5s var(--ease) .3s both;
+    }
+
+    /* Sub text */
+    .sub{
+      font-size:clamp(13px,2vw,14.5px);
+      color:var(--text-2);line-height:1.75;
+      max-width:340px;
+      margin:14px auto 0;
+      animation:fadeUp .5s var(--ease) .36s both;
+    }
+
+    /* URL pill */
+    .url{
+      font-family:'JetBrains Mono',monospace;
+      font-size:11.5px;color:var(--text-3);
+      background:rgba(236,72,153,.05);
+      border:1px solid var(--pink-border);
+      padding:7px 18px;border-radius:999px;
+      margin-top:22px;
+      max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+      animation:fadeUp .5s var(--ease) .4s both;
+    }
+
+    /* Buttons */
+    .btns{
+      display:flex;gap:12px;flex-wrap:wrap;
+      justify-content:center;
+      margin-top:26px;
+      animation:fadeUp .5s var(--ease) .46s both;
+    }
+    .btn-p{
+      display:inline-flex;align-items:center;gap:8px;
+      font-family:'Sora',sans-serif;font-size:14px;font-weight:700;color:#fff;
+      background:linear-gradient(135deg,var(--pink-deep),#c026d3);
+      padding:13px 28px;border-radius:999px;border:none;cursor:pointer;text-decoration:none;
+      box-shadow:0 4px 20px rgba(236,72,153,.32);
+      transition:transform .2s var(--ease),box-shadow .2s var(--ease);
+      white-space:nowrap;
+    }
+    .btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(236,72,153,.42);}
+    .btn-p:active{transform:scale(.97);}
+    .btn-g{
+      display:inline-flex;align-items:center;gap:8px;
+      font-family:'Sora',sans-serif;font-size:14px;font-weight:600;color:var(--text);
+      background:#fff;padding:13px 26px;border-radius:999px;
+      border:1.5px solid rgba(0,0,0,.1);cursor:pointer;text-decoration:none;
+      transition:all .2s var(--ease);
+      white-space:nowrap;
+    }
+    .btn-g:hover{border-color:var(--pink-border);color:var(--pink-deep);transform:translateY(-2px);}
+    .btn-g:active{transform:scale(.97);}
+
+    /* Mobile: stack buttons */
+    @media(max-width:420px){
+      .btns{flex-direction:column;align-items:stretch;width:100%;max-width:300px;}
+      .btn-p,.btn-g{justify-content:center;}
+      .logo{margin-top:36px;}
+    }
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+  </style>
+</head>
+<body>
+
+  <div class="bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="grid"></div>
+
+  <!-- PC floating cards -->
+  <div class="card-float cf-l">
+    <div class="cf-label">VPS Server</div>
+    <div class="cf-row"><span class="cf-k">RAM</span><span class="cf-v">8 GB</span></div>
+    <div class="cf-row"><span class="cf-k">CPU</span><span class="cf-v">4 vCore</span></div>
+    <div class="cf-row"><span class="cf-k">Storage</span><span class="cf-v">80 GB SSD</span></div>
+    <div class="cf-status"><span class="cf-dot"></span>Online</div>
+  </div>
+  <div class="card-float cf-r">
+    <div class="cf-label">RDP Server</div>
+    <div class="cf-row"><span class="cf-k">RAM</span><span class="cf-v">16 GB</span></div>
+    <div class="cf-row"><span class="cf-k">CPU</span><span class="cf-v">8 vCore</span></div>
+    <div class="cf-row"><span class="cf-k">Uptime</span><span class="cf-v">99.9%</span></div>
+    <div class="cf-status"><span class="cf-dot"></span>Active</div>
+  </div>
+
+  <div class="page">
+
+    <!-- 1. Techofy Cloud — top -->
+    <a href="/" class="logo">
+      <span class="logo-dot"></span>
+      Techofy&nbsp;<span style="color:var(--pink-deep);">Cloud</span>
+    </a>
+
+
+    <!-- 2. ERROR 404 badge — small gap after logo -->
+    <div class="badge">
+      <span class="badge-dot"></span>
+      Error 404
+    </div>
+
+    <!-- 3. Centre block — rest of viewport height -->
+    <div class="centre">
+
+      <!-- Big 404 -->
+      <div class="num">404</div>
+
+      <!-- 1 line gap → Oops! Page Not Found -->
+      <h1 class="title">Oops! Page Not Found</h1>
+
+      <!-- Description -->
+      <p class="sub">
+        The page you're looking for has been moved,
+        deleted, or never existed. Don't worry —
+        your free server is still waiting!
+      </p>
+
+      <!-- URL -->
+      <div class="url" id="badUrl">techofy.xyz/...</div>
+
+      <!-- Buttons -->
+      <div class="btns">
+        <a href="/" class="btn-p">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24"><path d="M3 12L12 3l9 9M5 10v9a1 1 0 001 1h4v-5h4v5h4a1 1 0 001-1v-9" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Go Home
+        </a>
+        <a href="https://t.me/Techofy" target="_blank" rel="noopener" class="btn-g">
+          <svg width="15" height="15" fill="none" viewBox="0 0 24 24"><path d="M21.5 2.5L2.5 9.5l7 2.5 2.5 7 9-16.5z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M9.5 12l5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Contact Us
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    const el = document.getElementById('badUrl');
+    if (el) el.textContent = location.href.length > 56
+      ? location.href.slice(0, 53) + '...'
+      : location.href;
+  </script>
+
+</body>
+</html>

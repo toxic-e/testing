@@ -1,0 +1,1854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#ec4899" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#ec4899" />
+  
+  <title>Techofy Cloud — Premium VPS & RDP Hosting</title>
+  <meta name="title" content="Techofy Cloud — Premium VPS & RDP Hosting" />
+  <meta name="description" content="Techofy Cloud offers enterprise-grade VPS and RDP hosting with lightning-fast performance, 99.9% uptime, and world-class support. Deploy servers instantly!" />
+  <meta name="keywords" content="free VPS, free RDP, VPS hosting, RDP server, cloud hosting, cheap VPS, Windows RDP, Linux VPS, Techofy Cloud, free server, high performance VPS, NVMe SSD VPS" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="author" content="Techofy Cloud" />
+  <meta name="language" content="English" />
+  <link rel="canonical" href="https://techofy.xyz/" />
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link Belf="shortcut icon" href="/favicon.svg" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://techofy.xyz/" />
+  <meta property="og:title" content="Techofy Cloud — Premium VPS & RDP Hosting" />
+  <meta property="og:description" content="Deploy enterprise-grade VPS and RDP servers instantly. Free plan available! 99.9% uptime, NVMe SSD, and 24/7 world-class support." />
+  <meta property="og:site_name" content="Techofy Cloud" />
+  <meta property="og:image" content="https://techofy.xyz/favicon.png" />
+  <meta property="og:image:secure_url" content="https://techofy.xyz/favicon.png" />
+  <meta property="og:image:type" content="image/png" /> <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:image:alt" content="Techofy Cloud Logo" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:domain" content="techofy.xyz" />
+  <meta name="twitter:url" content="https://techofy.xyz/" />
+  <meta name="twitter:title" content="Techofy Cloud — Premium VPS & RDP Hosting" />
+  <meta name="twitter:description" content="Get your high-speed VPS or RDP server instantly. Enterprise-grade cloud hosting with 99.9% uptime. Claim your server now!" />
+  <meta name="twitter:image" content="https://techofy.xyz/favicon.png" />
+
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Techofy Cloud",
+      "url": "https://techofy.xyz/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://techofy.xyz/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Techofy Cloud",
+      "url": "https://techofy.xyz/",
+      "logo": "https://techofy.xyz/favicon.svg",
+      "sameAs": [
+        "https://t.me/Techofy"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "url": "https://t.me/Techofy"
+      }
+    }
+  ]
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --pink:#f472b6;
+  --pink-deep:#ec4899;
+  --pink-soft:#fce7f3;
+  --pink-pale:#fdf2f8;
+  --pink-border:rgba(236,72,153,0.18);
+  --white:#fff;
+  --off:#fafafa;
+  --text:#111;
+  --text-2:#555;
+  --text-3:#999;
+  --green:#34c759;
+  --border:rgba(0,0,0,0.08);
+  --nav-h:62px;
+  --r-sm:10px;--r-md:16px;--r-lg:22px;--r-xl:30px;--r-full:999px;
+  --ease:cubic-bezier(0.25,0.46,0.45,0.94);
+  --spring:cubic-bezier(0.34,1.56,0.64,1);
+  --shadow-sm:0 1px 6px rgba(0,0,0,0.06);
+  --shadow-md:0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg:0 12px 48px rgba(0,0,0,0.1);
+  --shadow-pink:0 8px 32px rgba(236,72,153,0.22);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:'Sora',sans-serif;background:var(--off);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+img{max-width:100%;display:block;}
+.hidden{display:none!important;}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
+@keyframes scaleIn{from{opacity:0;transform:scale(0.94) translateY(10px);}to{opacity:1;transform:scale(1) translateY(0);}}
+@keyframes spin{to{transform:rotate(360deg);}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.5;transform:scale(.75);}}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+@keyframes stroke{100%{stroke-dashoffset:0;}}
+@keyframes checkFill{0%{opacity:0;transform:scale(.6);}100%{opacity:1;transform:scale(1);}}
+@keyframes checkScale{0%,100%{transform:none;}50%{transform:scale3d(1.1,1.1,1);}}
+@keyframes toast-in{from{opacity:0;transform:translateX(100%) scale(.9);}to{opacity:1;transform:translateX(0) scale(1);}}
+@keyframes toast-out{from{opacity:1;transform:translateX(0) scale(1);}to{opacity:0;transform:translateX(100%) scale(.9);}}
+@keyframes orb{0%,100%{opacity:.4;transform:scale(1);}50%{opacity:.7;transform:scale(1.07);}}
+
+.animate-up{opacity:0;animation:fadeUp .7s var(--spring) forwards;}
+
+/* ── NAVBAR ── */
+.navbar{
+  position:fixed;top:0;left:0;right:0;z-index:1000;
+  height:var(--nav-h);
+  background:rgba(255,255,255,0.82);
+  backdrop-filter:blur(28px) saturate(200%);
+  -webkit-backdrop-filter:blur(28px) saturate(200%);
+  border-bottom:1px solid rgba(0,0,0,0.06);
+  transition:box-shadow .2s;
+}
+.navbar.scrolled{box-shadow:var(--shadow-sm);}
+
+/* padding-left ko thoda kam kiya (24px se 12px) taaki logo aur left side me ho jaye */
+.nav-inner{max-width:1160px;margin:0 auto;padding:0 12px 0 24px;height:100%;display:flex;align-items:center;gap:32px;}
+
+/* gap ko 7px se 4px kiya taaki space kam ho jaye, aur margin-right: auto kiya taaki left me shift ho */
+.logo{font-family:'Sora',sans-serif;font-size:18px;font-weight:700;letter-spacing:-.4px;color:var(--text);display:flex;align-items:center;gap:4px;flex-shrink:0;margin-right:auto;}
+
+.logo-icon{font-size:20px;}
+.logo-dot{color:var(--pink-deep);}
+.nav-links{display:flex;align-items:center;gap:28px;flex:1;}
+.nav-links a{font-size:14px;font-weight:500;color:var(--text-2);transition:color .2s;position:relative;}
+.nav-links a:hover{color:var(--text);}
+.nav-actions{display:flex;align-items:center;gap:8px;margin-left:auto;}
+.btn-ghost{font-size:13.5px;font-weight:500;color:var(--text-2);padding:8px 18px;border-radius:var(--r-full);border:1px solid var(--border);transition:all .2s;}
+.btn-ghost:hover{background:#f5f5f5;color:var(--text);}
+.btn-primary{font-size:13.5px;font-weight:600;color:#fff;background:linear-gradient(135deg,var(--pink-deep),#c026d3);padding:9px 20px;border-radius:var(--r-full);box-shadow:0 3px 12px rgba(236,72,153,.28);transition:all .2s;}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(236,72,153,.38);}
+.btn-primary:active{transform:scale(.97);}
+.btn-user{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:500;color:var(--text);padding:5px 14px 5px 5px;border-radius:var(--r-full);border:1px solid var(--border);transition:all .2s;}
+.btn-user:hover{background:#f5f5f5;}
+.user-avatar{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--pink-deep),#c026d3);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;color:#fff;flex-shrink:0;}
+.nav-hamburger{display:none;flex-direction:column;gap:5px;padding:8px;border-radius:var(--r-sm);margin-left:auto;}
+.nav-hamburger span{width:20px;height:1.8px;background:var(--text);border-radius:2px;transition:var(--ease);}
+.nav-mobile{display:none;flex-direction:column;gap:2px;padding:14px 24px 18px;border-top:1px solid var(--border);background:rgba(255,255,255,.97);backdrop-filter:blur(20px);}
+.nav-mobile a{font-size:15px;font-weight:500;color:var(--text);padding:9px 0;border-bottom:1px solid var(--border);}
+.nav-mobile.open{display:flex;}
+.nav-mobile-actions{display:flex;gap:10px;margin-top:12px;}
+.nav-mobile-actions button{flex:1;}
+
+
+/* ── HERO ── */
+.hero{
+  min-height:100vh;
+  padding:calc(var(--nav-h) + 80px) 24px 80px;
+  display:flex;align-items:center;justify-content:center;
+  flex-direction:column;gap:60px;
+  position:relative;overflow:hidden;
+  background:linear-gradient(160deg,#fff 0%,#fdf2f8 55%,#fce7f3 100%);
+}
+.hero-bg{position:absolute;inset:0;pointer-events:none;overflow:hidden;}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);animation:orb 8s ease-in-out infinite;}
+.orb-1{width:600px;height:600px;background:radial-gradient(circle,rgba(244,114,182,.16),transparent 70%);top:-220px;left:-160px;}
+.orb-2{width:500px;height:500px;background:radial-gradient(circle,rgba(192,38,211,.1),transparent 70%);top:60px;right:-140px;animation-delay:3s;}
+.orb-3{width:400px;height:400px;background:radial-gradient(circle,rgba(251,207,232,.22),transparent 70%);bottom:-60px;left:38%;animation-delay:5.5s;}
+.hero-lines{position:absolute;inset:0;background-image:linear-gradient(rgba(244,114,182,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(244,114,182,.035) 1px,transparent 1px);background-size:64px 64px;}
+.hero-content{position:relative;z-index:1;text-align:center;max-width:740px;}
+.hero-badge{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:600;letter-spacing:.7px;text-transform:uppercase;color:var(--pink-deep);background:rgba(236,72,153,.08);border:1px solid var(--pink-border);padding:6px 16px;border-radius:var(--r-full);margin-bottom:24px;}
+.badge-dot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s ease-in-out infinite;}
+.hero-title{font-size:clamp(38px,7vw,70px);font-weight:800;letter-spacing:-2px;line-height:1.06;color:var(--text);margin-bottom:18px;}
+.hero-title .title-top{display:block;margin-bottom:16px;}
+.hero-title .hl{color:var(--pink-deep);font-style:normal;display:block;line-height:1.06;letter-spacing:-2px;}
+.hero-sub{font-size:clamp(14px,1.8vw,17px);font-weight:400;color:var(--text-2);line-height:1.7;margin-bottom:36px;max-width:580px;margin-left:auto;margin-right:auto;}
+.hero-actions{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:36px;}
+.btn-hero-primary{font-size:15.5px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--pink-deep),#c026d3);padding:16px 38px;border-radius:var(--r-full);box-shadow:0 8px 28px rgba(236,72,153,.3);transition:all .25s var(--ease);position:relative;overflow:hidden;}
+.btn-hero-primary:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(236,72,153,.4);}
+.btn-hero-primary:active{transform:scale(.97);}
+.btn-hero-ghost{font-size:15.5px;font-weight:600;color:var(--pink-deep);padding:16px 34px;border-radius:var(--r-full);border:1.5px solid rgba(236,72,153,.28);transition:all .25s var(--ease);}
+.btn-hero-ghost:hover{background:var(--pink-soft);border-color:var(--pink-deep);}
+.hero-trust{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;}
+.trust-item{display:flex;align-items:center;gap:6px;font-size:12.5px;font-weight:500;color:var(--text-2);}
+.trust-check{width:16px;height:16px;border-radius:50%;background:rgba(52,199,89,.14);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:8px;font-weight:800;flex-shrink:0;}
+.hero-visual{position:relative;z-index:1;animation:float 6s ease-in-out infinite;}
+.server-card-visual{background:rgba(255,255,255,.94);backdrop-filter:blur(20px);border:1px solid var(--border);border-radius:var(--r-lg);padding:24px;width:320px;box-shadow:var(--shadow-lg);}
+.server-card-header{display:flex;align-items:center;gap:9px;margin-bottom:20px;font-size:13px;font-weight:600;color:var(--text);}
+.server-status-dot{width:9px;height:9px;border-radius:50%;background:var(--green);box-shadow:0 0 0 3px rgba(52,199,89,.2);animation:pulse 2s ease-in-out infinite;}
+.server-region{margin-left:auto;font-size:10.5px;font-weight:500;color:var(--text-3);background:var(--pink-pale);padding:3px 9px;border-radius:var(--r-full);border:1px solid var(--pink-border);}
+.server-metrics{display:flex;flex-direction:column;gap:11px;margin-bottom:16px;}
+.metric{display:grid;grid-template-columns:32px 1fr 64px;align-items:center;gap:9px;}
+.metric-label{font-size:10.5px;font-weight:600;color:var(--text-3);letter-spacing:.4px;font-family:'JetBrains Mono',monospace;}
+.metric-bar{height:3.5px;background:rgba(0,0,0,.07);border-radius:2px;overflow:hidden;}
+.metric-fill{height:100%;background:linear-gradient(90deg,var(--pink-deep),#c026d3);border-radius:2px;}
+.metric-val{font-size:10.5px;font-weight:600;color:var(--text-2);text-align:right;font-family:'JetBrains Mono',monospace;}
+.server-specs{display:flex;gap:5px;flex-wrap:wrap;}
+.spec-pill{font-size:10.5px;font-weight:600;padding:3px 10px;border-radius:var(--r-full);background:var(--pink-pale);color:var(--text-2);border:1px solid var(--pink-border);}
+.spec-pill.online{background:rgba(52,199,89,.1);color:#25a244;border-color:rgba(52,199,89,.25);}
+
+/* ── STATS ── */
+.stats-bar{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:48px 24px;}
+.stats-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-around;gap:0;flex-wrap:wrap;}
+.stat-item{flex:1;min-width:110px;text-align:center;padding:12px;}
+.stat-number{font-family:'Sora',sans-serif;font-size:clamp(28px,4vw,44px);font-weight:800;letter-spacing:-1.5px;color:var(--text);line-height:1;margin-bottom:6px;}
+.stat-label{font-size:12.5px;font-weight:500;color:var(--text-3);}
+.stat-divider{width:1px;height:44px;background:var(--border);flex-shrink:0;}
+
+/* ── SECTIONS ── */
+.section-inner{max-width:1160px;margin:0 auto;padding:0 24px;}
+.section-header{text-align:center;margin-bottom:56px;}
+.section-badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--pink-deep);background:rgba(236,72,153,.08);border:1px solid var(--pink-border);padding:5px 14px;border-radius:var(--r-full);margin-bottom:16px;}
+.section-title{font-size:clamp(28px,4vw,46px);font-weight:800;letter-spacing:-1.5px;line-height:1.1;color:var(--text);margin-bottom:12px;}
+.gradient{background:linear-gradient(135deg,var(--pink-deep),#c026d3);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.section-subtitle{font-size:15px;font-weight:400;color:var(--text-2);line-height:1.6;}
+
+/* ── FEATURES ── */
+.features{padding:96px 0 40px;}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.feature-card{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;transition:all .2s var(--ease);}
+.feature-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--pink-border);}
+.feature-icon{width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;flex-shrink:0;}
+.feature-card h3{font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px;letter-spacing:-.3px;}
+.feature-card p{font-size:13.5px;color:var(--text-2);line-height:1.6;}
+
+/* ── WHY CHOOSE US ── */
+.why-section{padding:40px 0 60px;background:#fff;}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;}
+.why-text .section-header{text-align:left;margin-bottom:32px;}
+.why-list{display:flex;flex-direction:column;gap:20px;}
+.why-item{display:flex;align-items:flex-start;gap:14px;}
+.why-icon{width:40px;height:40px;border-radius:12px;background:var(--pink-pale);border:1px solid var(--pink-border);display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px;}
+.why-icon svg{width:18px;height:18px;}
+.why-item-title{font-size:15px;font-weight:700;color:var(--text);margin-bottom:3px;letter-spacing:-.2px;}
+.why-item-desc{font-size:13.5px;color:var(--text-2);line-height:1.6;}
+.why-visual{position:relative;}
+.why-card-stack{display:flex;flex-direction:column;gap:12px;}
+.why-mini-card{background:#fff;border:1px solid var(--border);border-radius:var(--r-md);padding:18px 20px;display:flex;align-items:center;gap:14px;box-shadow:var(--shadow-sm);transition:all .2s;}
+.why-mini-card:hover{transform:translateX(4px);box-shadow:var(--shadow-md);}
+.why-mini-icon{width:38px;height:38px;border-radius:11px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:18px;}
+.why-mini-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:2px;}
+.why-mini-sub{font-size:12px;color:var(--text-3);}
+.why-badge-row{display:flex;gap:10px;margin-top:4px;}
+.why-badge{font-size:11px;font-weight:600;padding:3px 10px;border-radius:var(--r-full);}
+.why-badge.green{background:rgba(52,199,89,.1);color:#25a244;border:1px solid rgba(52,199,89,.2);}
+.why-badge.pink{background:rgba(236,72,153,.1);color:var(--pink-deep);border:1px solid var(--pink-border);}
+.why-badge.purple{background:rgba(124,58,237,.1);color:#7c3aed;border:1px solid rgba(124,58,237,.2);}
+
+/* ── TRUSTED CUSTOMERS ── */
+.trusted-section{padding:40px 0 24px;background:var(--off);}
+.trusted-header{text-align:center;margin-bottom:28px;}
+.trusted-header p{font-size:14px;font-weight:500;color:var(--text-3);letter-spacing:.5px;text-transform:uppercase;margin-bottom:12px;}
+.trusted-header h2{font-size:clamp(22px,3vw,32px);font-weight:800;letter-spacing:-1px;color:var(--text);}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+.testimonial-card{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:24px;transition:all .2s;}
+.testimonial-card:hover{box-shadow:var(--shadow-md);border-color:var(--pink-border);}
+.stars{display:flex;gap:3px;margin-bottom:14px;}
+.star{font-size:13px;color:#fbbf24;}
+.testimonial-text{font-size:13.5px;color:var(--text-2);line-height:1.65;margin-bottom:18px;}
+.testimonial-author{display:flex;align-items:center;gap:10px;}
+.author-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;flex-shrink:0;}
+.author-name{font-size:13.5px;font-weight:700;color:var(--text);}
+.author-role{font-size:12px;color:var(--text-3);}
+.trusted-logos{display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;margin-top:48px;padding-top:40px;border-top:1px solid var(--border);}
+.trusted-logo-item{font-size:14px;font-weight:700;color:var(--text-3);letter-spacing:-.3px;opacity:.55;transition:opacity .2s;}
+.trusted-logo-item:hover{opacity:.9;}
+
+/* ── PRICING ── */
+.pricing{padding:40px 0 96px;}
+.pricing-toggle-wrap{display:flex;justify-content:center;margin-bottom:32px;}
+.pricing-toggle{display:flex;background:#f0f0f0;border-radius:var(--r-full);padding:4px;gap:4px;}
+.toggle-btn{font-size:13.5px;font-weight:600;padding:9px 28px;border-radius:var(--r-full);border:none;cursor:pointer;background:transparent;color:var(--text-2);transition:all .22s var(--ease);letter-spacing:.1px;}
+.toggle-btn.active{background:#fff;color:var(--text);box-shadow:0 2px 10px rgba(0,0,0,0.10);}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start;}
+.pricing-card{background:#fff;border:1px solid var(--border);border-radius:var(--r-lg);padding:28px;position:relative;transition:all .2s var(--ease);}
+.pricing-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md);}
+.pricing-card.popular{border-color:var(--pink-deep);box-shadow:0 0 0 3px rgba(236,72,153,.08),var(--shadow-md);transform:scale(1.02);}
+.pricing-card.popular:hover{transform:scale(1.02) translateY(-4px);}
+.popular-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);font-size:10.5px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:#fff;background:linear-gradient(135deg,var(--pink-deep),#c026d3);padding:4px 16px;border-radius:var(--r-full);white-space:nowrap;box-shadow:0 3px 12px rgba(236,72,153,.32);}
+.plan-header{display:flex;align-items:center;gap:12px;margin-bottom:22px;}
+.plan-icon{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.starter-icon{background:rgba(0,0,0,.06);}
+.pro-icon{background:linear-gradient(135deg,var(--pink-deep),#c026d3);}
+.max-icon{background:linear-gradient(135deg,#7c3aed,#5b21b6);}
+.plan-name{font-size:17px;font-weight:700;color:var(--text);letter-spacing:-.3px;}
+.plan-tagline{font-size:12.5px;color:var(--text-3);margin-top:1px;}
+.plan-price{display:flex;align-items:baseline;gap:2px;margin-bottom:22px;}
+.price-currency{font-size:18px;font-weight:700;color:var(--text);}
+.price-amount{font-size:44px;font-weight:800;color:var(--text);letter-spacing:-2px;line-height:1;}
+.price-period{font-size:14px;font-weight:500;color:var(--text-3);margin-left:2px;}
+.plan-features{list-style:none;display:flex;flex-direction:column;gap:11px;margin-bottom:26px;}
+.plan-features li{display:flex;align-items:center;gap:9px;font-size:13.5px;color:var(--text);font-weight:500;}
+.check{width:18px;height:18px;border-radius:50%;background:rgba(52,199,89,.12);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:800;flex-shrink:0;}
+.check.muted{background:rgba(0,0,0,.06);color:var(--text-3);}
+.btn-plan{width:100%;font-size:14.5px;font-weight:600;color:var(--text);background:var(--pink-pale);border:1.5px solid var(--pink-border);padding:13px;border-radius:var(--r-md);transition:all .2s var(--ease);margin-bottom:8px;}
+.btn-plan:hover{background:var(--pink-soft);border-color:var(--pink);transform:translateY(-1px);}
+.btn-plan:active{transform:scale(.98);}
+.btn-plan-popular{color:#fff;background:linear-gradient(135deg,var(--pink-deep),#c026d3);border-color:transparent;box-shadow:0 4px 16px rgba(236,72,153,.26);}
+.btn-plan-popular:hover{background:linear-gradient(135deg,#db2777,#a21caf);box-shadow:0 8px 24px rgba(236,72,153,.36);}
+.plan-note{font-size:11.5px;color:var(--text-3);text-align:center;}
+
+/* ── FOOTER ── */
+.footer{background:linear-gradient(160deg,#111 0%,#1e0d14 100%);color:rgba(255,255,255,.7);padding:52px 24px 0;}
+.footer-inner{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.07);}
+.footer-brand .logo{color:#fff;margin-bottom:10px;}
+.footer-brand p{font-size:13px;color:rgba(255,255,255,.45);line-height:1.6;max-width:220px;}
+.footer-socials{display:flex;gap:8px;margin-top:14px;}
+.social-link{font-size:12.5px;font-weight:500;color:rgba(255,255,255,.45);padding:6px 14px;border:1px solid rgba(255,255,255,.1);border-radius:var(--r-full);transition:all .2s;}
+.social-link:hover{color:#fff;border-color:var(--pink);background:rgba(236,72,153,.12);}
+.footer-col h4{font-family:'Sora',sans-serif;font-size:10.5px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:14px;}
+.footer-col a{display:block;font-size:13.5px;color:rgba(255,255,255,.55);margin-bottom:9px;transition:color .2s;}
+.footer-col a:hover{color:#fff;}
+.footer-bottom{max-width:1160px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:18px 0;font-size:12.5px;color:rgba(255,255,255,.28);flex-wrap:wrap;gap:6px;}
+
+/* ── MODALS ── */
+.modal-overlay{position:fixed;inset:0;z-index:2000;display:none;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.4);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:fadeIn .2s ease forwards;}
+.modal-overlay.active{display:flex;}
+.modal-glass{background:rgba(255,255,255,.98);backdrop-filter:blur(28px);-webkit-backdrop-filter:blur(28px);border-radius:var(--r-xl);border:1px solid var(--border);box-shadow:var(--shadow-lg);position:relative;width:100%;max-width:430px;animation:scaleIn .28s var(--spring) forwards;max-height:90vh;overflow-y:auto;}
+.order-modal{max-width:490px;}
+.modal-close{position:absolute;top:14px;right:14px;width:28px;height:28px;border-radius:50%;background:rgba(0,0,0,.06);color:var(--text-2);font-size:17px;display:flex;align-items:center;justify-content:center;transition:all .2s;z-index:1;}
+.modal-close:hover{background:var(--pink-soft);color:var(--pink-deep);}
+.auth-logo{font-family:'Sora',sans-serif;font-size:18px;font-weight:700;letter-spacing:-.3px;color:var(--text);display:flex;align-items:center;justify-content:center;gap:6px;padding:30px 30px 0;}
+.auth-tabs{display:flex;gap:3px;margin:20px 30px 0;background:var(--pink-pale);border-radius:var(--r-md);padding:4px;}
+.auth-tab{flex:1;font-size:13.5px;font-weight:600;color:var(--text-2);padding:8px;border-radius:11px;transition:all .2s var(--ease);}
+.auth-tab.active{background:#fff;color:var(--text);box-shadow:var(--shadow-sm);}
+.auth-form{padding:20px 30px 30px;display:flex;flex-direction:column;gap:14px;}
+.order-header{padding:30px 30px 0;text-align:center;}
+.order-plan-badge{display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:.2px;color:var(--pink-deep);background:rgba(236,72,153,.1);border:1px solid var(--pink-border);padding:4px 14px;border-radius:var(--r-full);margin-bottom:10px;}
+.order-title{font-size:20px;font-weight:800;color:var(--text);letter-spacing:-.5px;margin-bottom:3px;}
+.order-subtitle{font-size:13.5px;color:var(--text-3);}
+.order-form{padding:20px 30px 30px;display:flex;flex-direction:column;gap:14px;}
+.order-security-note{display:flex;align-items:center;justify-content:center;gap:5px;font-size:11.5px;color:var(--text-3);text-align:center;}
+.form-group{display:flex;flex-direction:column;gap:5px;position:relative;}
+.form-label{font-size:12.5px;font-weight:600;color:var(--text);letter-spacing:.1px;}
+.form-input{width:100%;font-family:inherit;font-size:15px;font-weight:400;color:var(--text);background:var(--pink-pale);border:1.5px solid var(--pink-border);border-radius:var(--r-md);padding:12px 15px;transition:all .2s var(--ease);outline:none;-webkit-appearance:none;}
+.form-input::placeholder{color:var(--text-3);}
+.form-input:focus{border-color:var(--pink-deep);background:#fff;box-shadow:0 0 0 4px rgba(236,72,153,.09);}
+.form-input.error{border-color:#ef4444;box-shadow:0 0 0 4px rgba(239,68,68,.08);}
+.form-hint{font-size:11.5px;color:var(--text-3);margin-top:1px;}
+.pw-toggle{position:absolute;right:12px;bottom:12px;color:var(--text-3);transition:color .2s;}
+.pw-toggle:hover{color:var(--pink-deep);}
+.form-error{font-size:12.5px;font-weight:500;color:#ef4444;background:rgba(239,68,68,.07);border:1px solid rgba(239,68,68,.15);padding:9px 13px;border-radius:var(--r-sm);}
+.btn-form-submit{width:100%;font-size:14.5px;font-weight:700;color:#fff;background:linear-gradient(135deg,var(--pink-deep),#c026d3);padding:14px;border-radius:var(--r-md);display:flex;align-items:center;justify-content:center;gap:9px;transition:all .2s var(--ease);box-shadow:0 4px 16px rgba(236,72,153,.23);}
+.btn-form-submit:hover{transform:translateY(-1px);box-shadow:0 8px 24px rgba(236,72,153,.32);}
+.btn-form-submit:active{transform:scale(.98);}
+.btn-form-submit:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+.btn-spinner{width:17px;height:17px;border:2.5px solid rgba(255,255,255,.35);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;}
+
+/* ── YT SECTION ── */
+.yt-section{display:flex;flex-direction:column;gap:14px;}
+.yt-card{display:flex;align-items:flex-start;gap:13px;background:#fff9f9;border:1.5px solid rgba(255,0,0,.1);border-radius:var(--r-md);padding:16px;}
+.yt-card-icon{flex-shrink:0;margin-top:2px;}
+.yt-card-content h4{font-size:13.5px;font-weight:700;color:var(--text);margin-bottom:3px;}
+.yt-card-content p{font-size:12.5px;color:var(--text-2);line-height:1.5;margin-bottom:9px;}
+.yt-link{display:inline-flex;align-items:center;gap:5px;font-size:12.5px;font-weight:600;color:#ff0000;transition:opacity .2s;}
+.yt-link:hover{opacity:.75;}
+.upload-section{display:flex;flex-direction:column;gap:7px;}
+.upload-drop-zone{position:relative;border:2px dashed var(--pink-border);border-radius:var(--r-md);background:var(--pink-pale);overflow:hidden;cursor:pointer;transition:all .2s;}
+.upload-drop-zone:hover,.upload-drop-zone.drag-over{border-color:var(--pink-deep);background:rgba(236,72,153,.04);}
+.upload-input{position:absolute;inset:0;opacity:0;cursor:pointer;width:100%;height:100%;z-index:2;}
+.upload-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:7px;padding:28px 20px;text-align:center;}
+.upload-icon{width:48px;height:48px;border-radius:14px;background:rgba(236,72,153,.09);display:flex;align-items:center;justify-content:center;margin-bottom:3px;}
+.upload-text{font-size:13.5px;font-weight:600;color:var(--text);}
+.upload-hint{font-size:11.5px;color:var(--text-3);}
+.upload-preview{display:flex;flex-direction:column;}
+.upload-preview img{width:100%;height:140px;object-fit:cover;}
+.upload-preview-info{display:flex;align-items:center;justify-content:space-between;padding:9px 13px;background:#fff;border-top:1px solid var(--pink-border);}
+.upload-preview-info span{font-size:12.5px;font-weight:500;color:var(--text);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.upload-remove{font-size:11.5px;font-weight:600;color:#ef4444;flex-shrink:0;padding:3px 7px;border-radius:var(--r-sm);transition:background .2s;}
+.upload-remove:hover{background:rgba(239,68,68,.08);}
+
+/* ── SUCCESS ── */
+.success-modal{text-align:center;padding:48px 40px;}
+.success-animation{margin-bottom:22px;display:flex;justify-content:center;}
+.checkmark{width:72px;height:72px;border-radius:50%;background:#34c759;display:flex;align-items:center;justify-content:center;animation:checkFill .4s cubic-bezier(.34,1.56,.64,1) forwards;}
+.checkmark-circle{display:none;}
+.checkmark-check{display:none;}
+.success-title{font-size:24px;font-weight:800;color:var(--text);letter-spacing:-.5px;margin-bottom:9px;}
+.success-text{font-size:13.5px;color:var(--text-2);line-height:1.65;margin-bottom:18px;max-width:320px;margin-left:auto;margin-right:auto;}
+.success-order-id{font-size:12.5px;color:var(--text-3);background:var(--pink-pale);padding:9px 16px;border-radius:var(--r-sm);margin-bottom:22px;display:inline-block;}
+
+/* ── TOAST ── */
+.toast-container{position:fixed;bottom:22px;right:22px;z-index:3000;display:flex;flex-direction:column;gap:9px;pointer-events:none;}
+.toast{display:flex;align-items:center;gap:11px;background:rgba(17,17,17,.92);backdrop-filter:blur(16px);color:#fff;padding:13px 17px;border-radius:var(--r-md);font-size:13.5px;font-weight:500;pointer-events:all;animation:toast-in .3s var(--spring) forwards;max-width:320px;box-shadow:var(--shadow-lg);}
+.toast.removing{animation:toast-out .25s ease forwards;}
+.toast-icon{font-size:15px;flex-shrink:0;}
+.toast.success .toast-icon::before{content:"✓";color:var(--green);}
+.toast.error .toast-icon::before{content:"✕";color:#ef4444;}
+.toast.info .toast-icon::before{content:"ℹ";color:var(--pink);}
+
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-track{background:transparent;}
+::-webkit-scrollbar-thumb{background:rgba(236,72,153,.18);border-radius:3px;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .features-grid{grid-template-columns:repeat(2,1fr);}
+  .why-grid{grid-template-columns:1fr;}
+  .why-visual{display:none;}
+  .testimonials-grid{grid-template-columns:repeat(2,1fr);}
+  .footer-inner{grid-template-columns:1fr 1fr;gap:32px;}
+  .footer-brand{grid-column:1/-1;}
+}
+@media(max-width:768px){
+  .nav-links,.nav-actions{display:none;}
+  .nav-hamburger{display:flex;}
+  .hero{flex-direction:column;padding-top:calc(var(--nav-h) + 48px);}
+  .hero-visual{display:none;}
+  .stats-inner{gap:0;}
+  .stat-divider{display:none;}
+  .stat-item{flex:1 1 45%;}
+  .features-grid{grid-template-columns:1fr;}
+  .pricing-grid{grid-template-columns:1fr;}
+  .pricing-card.popular{transform:none;}
+  .testimonials-grid{grid-template-columns:1fr;}
+  .footer-inner{grid-template-columns:1fr;}
+  .footer-bottom{flex-direction:column;align-items:center;text-align:center;}
+  .trusted-logos{gap:20px;}
+}
+@media(max-width:480px){
+  .modal-glass{border-radius:var(--r-lg);}
+  .auth-form,.order-form{padding:18px 20px 24px;}
+  .auth-logo{padding:26px 20px 0;}
+  .auth-tabs{margin:16px 20px 0;}
+  .order-header{padding:24px 20px 0;}
+  .success-modal{padding:36px 22px;}
+  .toast-container{bottom:14px;right:14px;left:14px;}
+  .toast{max-width:100%;}
+}
+</style>
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon"><img src="favicon.svg" alt="Techofy" style="width:22px;height:22px;display:block;" /></span>
+      Techofy Cloud
+    </a>
+    <div class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-ghost" id="loginBtn">Sign In</button>
+      <button class="btn-primary" id="signupBtn">Get Started</button>
+      <button class="btn-user hidden" id="userMenuBtn">
+        <span class="user-avatar" id="userAvatarNav"></span>
+        <span id="userNameNav"></span>
+      </button>
+    </div>
+    <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="nav-mobile" id="navMobile">
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#why">Why Us</a>
+    <a href="#contact">Contact</a>
+    <div class="nav-mobile-actions">
+      <button class="btn-ghost" id="loginBtnMobile">Sign In</button>
+      <button class="btn-primary" id="signupBtnMobile">Get Started</button>
+    </div>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="hero-lines"></div>
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-badge animate-up">
+      <span class="badge-dot"></span>
+      Enterprise Cloud Infrastructure
+    </div>
+    <h1 class="hero-title animate-up" style="animation-delay:.1s">
+      <span class="title-top">The Cloud Platform</span>
+      <span class="hl">Built for Performance</span>
+    </h1>
+    <p class="hero-sub animate-up" style="animation-delay:.2s">
+      Deploy VPS and RDP servers in seconds. Enterprise-grade hardware, 99.9% uptime SLA, and support that actually responds.
+    </p>
+    <div class="hero-actions animate-up" style="animation-delay:.3s">
+      <button class="btn-hero-primary" id="heroGetStarted">Deploy Your Server</button>
+      <a href="#pricing" class="btn-hero-ghost">View Plans</a>
+    </div>
+    <div class="hero-trust animate-up" style="animation-delay:.4s">
+      <div class="trust-item"><span class="trust-check">✓</span> 99.9% Uptime SLA</div>
+      <div class="trust-item"><span class="trust-check">✓</span> Setup in Minutes</div>
+      <div class="trust-item"><span class="trust-check">✓</span> 24/7 Expert Support</div>
+    </div>
+  </div>
+  <div class="hero-visual animate-up" style="animation-delay:.5s">
+    <div class="server-card-visual">
+      <div class="server-card-header">
+        <div class="server-status-dot"></div>
+        <span>prod-server-01</span>
+        <span class="server-region">Frankfurt, EU</span>
+      </div>
+      <div class="server-metrics">
+        <div class="metric">
+          <div class="metric-label">CPU</div>
+          <div class="metric-bar"><div class="metric-fill" style="width:34%"></div></div>
+          <div class="metric-val">34%</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">RAM</div>
+          <div class="metric-bar"><div class="metric-fill" style="width:61%"></div></div>
+          <div class="metric-val">61%</div>
+        </div>
+        <div class="metric">
+          <div class="metric-label">NET</div>
+          <div class="metric-bar"><div class="metric-fill" style="width:22%"></div></div>
+          <div class="metric-val">↑ 1.2 GB/s</div>
+        </div>
+      </div>
+      <div class="server-specs">
+        <div class="spec-pill">32 GB RAM</div>
+        <div class="spec-pill">16 vCPU</div>
+        <div class="spec-pill">NVMe SSD</div>
+        <div class="spec-pill online">● Online</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIVE STATS -->
+<section class="stats-bar" id="stats">
+  <div class="stats-inner">
+    <div class="stat-item">
+      <div class="stat-number" data-target="1240" id="statUsers">0</div>
+      <div class="stat-label">Total Users</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="340" id="statServers">0</div>
+      <div class="stat-label">Active Servers</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="120" id="statRDP">0</div>
+      <div class="stat-label">RDP Instances</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-number" data-target="220" id="statVPS">0</div>
+      <div class="stat-label">VPS Instances</div>
+    </div>
+    <div class="stat-divider"></div>
+    <div class="stat-item">
+      <div class="stat-number" id="statUptime">99.9<span style="font-size:.6em">%</span></div>
+      <div class="stat-label">Uptime SLA</div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features" id="features">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-badge">Why Techofy</div>
+      <h2 class="section-title">Infrastructure built for<br /><span class="gradient">the next generation</span></h2>
+      <p class="section-subtitle">Everything you need to run powerful servers — without the complexity.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon" style="background:linear-gradient(135deg,#ec4899,#c026d3)">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Lightning Performance</h3>
+        <p>NVMe SSDs, 10 Gbps network ports, and latest-gen Intel Xeon processors deliver unmatched speed.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:linear-gradient(135deg,#34c759,#25a244)">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Enterprise Security</h3>
+        <p>DDoS protection, firewall rules, isolated networks, and end-to-end encryption on every server.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:linear-gradient(135deg,#f59e0b,#d97706)">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" stroke="#fff" stroke-width="1.8"/><path d="M19.07 4.93A10 10 0 1 0 4.93 19.07" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Global Network</h3>
+        <p>Nodes across Europe, North America, and Asia — pick the region closest to your users.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" stroke="#fff" stroke-width="1.8"/><path d="M8 21h8M12 17v4" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Full RDP Access</h3>
+        <p>Windows-ready RDP servers with GPU support, pre-configured desktops, and clipboard sync.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:linear-gradient(135deg,#ef4444,#dc2626)">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Instant Deployment</h3>
+        <p>Order your server and receive credentials within hours. No waiting, no queues.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon" style="background:linear-gradient(135deg,#ec4899,#7c3aed)">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>24/7 Expert Support</h3>
+        <p>Real engineers available round the clock. Average response time under 1 hour.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-section" id="why">
+  <div class="section-inner">
+    <div class="why-grid">
+      <div class="why-text">
+        <div class="section-header" style="text-align:left;margin-bottom:32px;">
+          <div class="section-badge">Why Choose Us</div>
+          <h2 class="section-title">The smarter choice<br /><span class="gradient">for serious projects</span></h2>
+          <p class="section-subtitle">We're not just another hosting company. We're a team of engineers who care deeply about your uptime.</p>
+        </div>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-icon">
+              <svg fill="none" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2" stroke="#ec4899" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div class="why-item-title">Real-time monitoring</div>
+              <div class="why-item-desc">We watch your server 24/7 so you don't have to. Automatic alerts before problems become outages.</div>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <svg fill="none" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#ec4899" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <div>
+              <div class="why-item-title">No hidden fees, ever</div>
+              <div class="why-item-desc">The price you see is the price you pay. Simple monthly billing with no surprise charges.</div>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <svg fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#ec4899" stroke-width="1.8"/><path d="M12 6v6l4 2" stroke="#ec4899" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <div>
+              <div class="why-item-title">Instant provisioning</div>
+              <div class="why-item-desc">Your server is ready within hours of ordering. No long waits, no manual queue.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why-visual">
+        <div class="why-card-stack">
+          <div class="why-mini-card">
+            <div class="why-mini-icon" style="background:rgba(52,199,89,.12)">🛡️</div>
+            <div>
+              <div class="why-mini-title">100% DDoS Protected</div>
+              <div class="why-mini-sub">All servers shielded at network level</div>
+              <div class="why-badge-row">
+                <span class="why-badge green">Active</span>
+                <span class="why-badge pink">Always On</span>
+              </div>
+            </div>
+          </div>
+          <div class="why-mini-card">
+            <div class="why-mini-icon" style="background:rgba(236,72,153,.12)">⚡</div>
+            <div>
+              <div class="why-mini-title">NVMe SSD Storage</div>
+              <div class="why-mini-sub">10x faster than traditional SSDs</div>
+              <div class="why-badge-row">
+                <span class="why-badge pink">Included</span>
+                <span class="why-badge purple">All Plans</span>
+              </div>
+            </div>
+          </div>
+          <div class="why-mini-card">
+            <div class="why-mini-icon" style="background:rgba(124,58,237,.12)">🌍</div>
+            <div>
+              <div class="why-mini-title">Multi-Region Nodes</div>
+              <div class="why-mini-sub">EU, NA, Asia — pick closest to you</div>
+              <div class="why-badge-row">
+                <span class="why-badge purple">3 Regions</span>
+                <span class="why-badge green">Low Latency</span>
+              </div>
+            </div>
+          </div>
+          <div class="why-mini-card">
+            <div class="why-mini-icon" style="background:rgba(251,191,36,.12)">💬</div>
+            <div>
+              <div class="why-mini-title">Real Human Support</div>
+              <div class="why-mini-sub">Engineers on call, not bots</div>
+              <div class="why-badge-row">
+                <span class="why-badge green">24/7</span>
+                <span class="why-badge pink">&lt; 1hr Response</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUSTED CUSTOMERS -->
+<section class="trusted-section" id="trusted">
+  <div class="section-inner">
+    <div class="trusted-header">
+      <p>Loved by developers worldwide</p>
+      <h2>What our customers say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Switched from a big provider and never looked back. The server was up within hours and the performance is insane for the price."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#ec4899,#c026d3)">R</div>
+          <div>
+            <div class="author-name">Rahul Sharma</div>
+            <div class="author-role">Full Stack Developer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"Support team responded in under 30 minutes. I've used 5 different VPS providers and this is by far the best experience."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#7c3aed,#5b21b6)">A</div>
+          <div>
+            <div class="author-name">Ahmed Al-Farsi</div>
+            <div class="author-role">DevOps Engineer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">
+          <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+        </div>
+        <p class="testimonial-text">"The free tier with YouTube subscribe is genius. Got my first server running in an hour. Upgraded to Pro the same week."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#34c759,#25a244)">K</div>
+          <div>
+            <div class="author-name">Kiran Patel</div>
+            <div class="author-role">Content Creator & Dev</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="pricing" id="pricing">
+  <div class="section-inner">
+    <div class="section-header">
+      <div class="section-badge">Pricing</div>
+      <h2 class="section-title">Simple, transparent<br /><span class="gradient">pricing plans</span></h2>
+      <p class="section-subtitle">Start free. Scale when you need. No hidden fees.</p>
+    </div>
+
+    <!-- VPS / RDP Toggle -->
+    <div class="pricing-toggle-wrap">
+      <div class="pricing-toggle">
+        <button class="toggle-btn active" id="toggleVPS" onclick="switchPricing('vps')">VPS</button>
+        <button class="toggle-btn" id="toggleRDP" onclick="switchPricing('rdp')">RDP</button>
+      </div>
+    </div>
+
+    <!-- VPS Plans -->
+    <div class="pricing-grid" id="vpsPlans">
+      <div class="pricing-card" data-plan="starter">
+        <div class="plan-header">
+          <div class="plan-icon starter-icon">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="plan-name">Starter</div>
+            <div class="plan-tagline">Perfect to get started</div>
+          </div>
+        </div>
+        <div class="plan-price"><span class="price-amount">Free</span></div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> 8 GB RAM</li>
+          <li><span class="check">✓</span> 4 vCPU Cores</li>
+          <li><span class="check">✓</span> 200 GB SSD</li>
+          <li><span class="check">✓</span> 1 Gbps Network</li>
+          <li><span class="check">✓</span> Linux VPS</li>
+          <li><span class="check muted">✓</span> Community Support</li>
+        </ul>
+        <button class="btn-plan" data-plan="starter" data-price="Free" data-ram="8GB RAM" data-type="VPS">Get Free Server</button>
+        <p class="plan-note">Requires YouTube Channel Subscribe Proof</p>
+      </div>
+      <div class="pricing-card popular" data-plan="pro">
+        <div class="popular-badge">Most Popular</div>
+        <div class="plan-header">
+          <div class="plan-icon pro-icon">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="plan-name">Pro</div>
+            <div class="plan-tagline">For growing projects</div>
+          </div>
+        </div>
+        <div class="plan-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount">10</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> 16 GB RAM</li>
+          <li><span class="check">✓</span> 8 vCPU Cores</li>
+          <li><span class="check">✓</span> 400 GB SSD</li>
+          <li><span class="check">✓</span> 5 Gbps Network</li>
+          <li><span class="check">✓</span> Linux VPS</li>
+          <li><span class="check">✓</span> Priority Support</li>
+        </ul>
+        <button class="btn-plan btn-plan-popular" data-plan="pro" data-price="$10/mo" data-ram="16GB RAM" data-type="VPS">Get Pro Server</button>
+        <p class="plan-note">Instant setup · 99.9% SLA</p>
+      </div>
+      <div class="pricing-card" data-plan="max">
+        <div class="plan-header">
+          <div class="plan-icon max-icon">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="plan-name">Max</div>
+            <div class="plan-tagline">For enterprise workloads</div>
+          </div>
+        </div>
+        <div class="plan-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount">20</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> 32 GB RAM</li>
+          <li><span class="check">✓</span> 16 vCPU Cores</li>
+          <li><span class="check">✓</span> 600 GB SSD</li>
+          <li><span class="check">✓</span> 10 Gbps Network</li>
+          <li><span class="check">✓</span> Linux VPS</li>
+          <li><span class="check">✓</span> Dedicated 24/7 Support</li>
+        </ul>
+        <button class="btn-plan" data-plan="max" data-price="$19/mo" data-ram="32GB RAM" data-type="VPS">Get Max Server</button>
+        <p class="plan-note">Instant setup · 99.9% SLA</p>
+      </div>
+    </div>
+
+    <!-- RDP Plans -->
+    <div class="pricing-grid" id="rdpPlans" style="display:none;">
+      <div class="pricing-card" data-plan="rdp-starter">
+        <div class="plan-header">
+          <div class="plan-icon starter-icon">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="plan-name">Starter</div>
+            <div class="plan-tagline">Perfect to get started</div>
+          </div>
+        </div>
+        <div class="plan-price"><span class="price-amount">Free</span></div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> 8 GB RAM</li>
+          <li><span class="check">✓</span> 4 vCPU Cores</li>
+          <li><span class="check">✓</span> 200 GB SSD</li>
+          <li><span class="check">✓</span> 1 Gbps Network</li>
+          <li><span class="check">✓</span> Windows RDP</li>
+          <li><span class="check muted">✓</span> Community Support</li>
+        </ul>
+        <button class="btn-plan" data-plan="rdp-starter" data-price="Free" data-ram="8GB RAM" data-type="RDP">Get Free RDP</button>
+        <p class="plan-note">Requires YouTube Channel Subscribe Proof</p>
+      </div>
+      <div class="pricing-card popular" data-plan="rdp-pro">
+        <div class="popular-badge">Most Popular</div>
+        <div class="plan-header">
+          <div class="plan-icon pro-icon">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="plan-name">Pro</div>
+            <div class="plan-tagline">For growing projects</div>
+          </div>
+        </div>
+        <div class="plan-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount">10</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> 16 GB RAM</li>
+          <li><span class="check">✓</span> 8 vCPU Cores</li>
+          <li><span class="check">✓</span> 400 GB SSD</li>
+          <li><span class="check">✓</span> 5 Gbps Network</li>
+          <li><span class="check">✓</span> Windows RDP</li>
+          <li><span class="check">✓</span> Priority Support</li>
+        </ul>
+        <button class="btn-plan btn-plan-popular" data-plan="rdp-pro" data-price="$15/mo" data-ram="16GB RAM" data-type="RDP">Get Pro RDP</button>
+        <p class="plan-note">Instant setup · 99.9% SLA</p>
+      </div>
+      <div class="pricing-card" data-plan="rdp-max">
+        <div class="plan-header">
+          <div class="plan-icon max-icon">
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div>
+            <div class="plan-name">Max</div>
+            <div class="plan-tagline">For enterprise workloads</div>
+          </div>
+        </div>
+        <div class="plan-price">
+          <span class="price-currency">$</span>
+          <span class="price-amount">20</span>
+          <span class="price-period">/mo</span>
+        </div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> 32 GB RAM</li>
+          <li><span class="check">✓</span> 16 vCPU Cores</li>
+          <li><span class="check">✓</span> 600 GB SSD</li>
+          <li><span class="check">✓</span> 5 Gbps Network</li>
+          <li><span class="check">✓</span> Windows RDP</li>
+          <li><span class="check">✓</span> Dedicated 24/7 Support</li>
+        </ul>
+        <button class="btn-plan" data-plan="rdp-max" data-price="$28/mo" data-ram="32GB RAM" data-type="RDP">Get Max RDP</button>
+        <p class="plan-note">Instant setup · 99.9% SLA</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="logo"><span class="logo-icon"><img src="favicon.svg" alt="Techofy" style="width:22px;height:22px;display:block;" /></span>Techofy<span class="logo-dot"></span>Cloud</div>
+      <p>Enterprise-grade cloud infrastructure for the next generation.</p>
+      <div class="footer-socials">
+        <a href="https://t.me/Techofy" target="_blank" rel="noopener" class="social-link">Telegram</a>
+        <a href="http://youtube.com/@tech-ofy" target="_blank" rel="noopener" class="social-link">YouTube</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Product</h4>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+    </div>
+    <div class="footer-col">
+      <h4>Orders</h4>
+      <a href="/tracking">Track Your Order</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="https://t.me/Techofy" target="_blank" rel="noopener">Telegram</a>
+      <a href="mailto:support@techofy.xyz">Email Us</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="/terms">Terms of Service</a>
+      <a href="/privacy">Privacy Policy</a>
+      <a href="/refund-policy">Refund Policy</a>
+      <a href="/updates">What's New</a>
+    </div>
+  </div>
+  <div class="footer-bottom" style="justify-content:center;text-align:center;flex-direction:column;align-items:center;gap:4px;">
+    <p>© <span id="footerYear"></span> Techofy Cloud. All rights reserved.</p>
+    <p style="margin-top:4px;font-size:11px;">
+      <a href="/terms" style="color:rgba(255,255,255,.28);margin:0 6px;">Terms</a>
+      <a href="/privacy" style="color:rgba(255,255,255,.28);margin:0 6px;">Privacy</a>
+      <a href="/refund-policy" style="color:rgba(255,255,255,.28);margin:0 6px;">Refund Policy</a>
+    </p>
+  </div>
+</footer>
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="authModal" role="dialog" aria-modal="true">
+  <div class="modal-glass auth-modal">
+    <button class="modal-close" id="authClose">&times;</button>
+    <div class="auth-logo"><span class="logo-icon">⚡</span>Techofy<span class="logo-dot">.</span>Cloud</div>
+    <div class="auth-tabs">
+      <button class="auth-tab active" data-tab="login">Sign In</button>
+      <button class="auth-tab" data-tab="register">Create Account</button>
+    </div>
+    <form class="auth-form" id="loginForm" novalidate>
+      <div class="form-group">
+        <label class="form-label" for="loginEmail">Email</label>
+        <input class="form-input" type="email" id="loginEmail" placeholder="Enter Your Email" autocomplete="email" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="loginPassword">Password</label>
+        <input class="form-input" type="password" id="loginPassword" placeholder="••••••••" autocomplete="current-password" required />
+        <button type="button" class="pw-toggle" data-target="loginPassword">
+          <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+      </div>
+      <div class="form-error hidden" id="loginError"></div>
+      <button class="btn-form-submit" type="submit" id="loginSubmit">
+        <span class="btn-text">Sign In</span>
+        <span class="btn-spinner hidden"></span>
+      </button>
+    </form>
+    <form class="auth-form hidden" id="registerForm" novalidate>
+      <div class="form-group">
+        <label class="form-label" for="regName">Full Name</label>
+        <input class="form-input" type="text" id="regName" placeholder="John Doe" autocomplete="name" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="regEmail">Email</label>
+        <input class="form-input" type="email" id="regEmail" placeholder="you@example.com" autocomplete="email" required />
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="regPassword">Password</label>
+        <input class="form-input" type="password" id="regPassword" placeholder="Min. 6 characters" autocomplete="new-password" required />
+        <button type="button" class="pw-toggle" data-target="regPassword">
+          <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
+        </button>
+      </div>
+      <div class="form-error hidden" id="registerError"></div>
+      <button class="btn-form-submit" type="submit" id="registerSubmit">
+        <span class="btn-text">Create Account</span>
+        <span class="btn-spinner hidden"></span>
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- ORDER MODAL — Multi-step request form -->
+<div class="modal-overlay" id="orderModal" role="dialog" aria-modal="true">
+  <div class="modal-glass order-modal" style="max-width:500px;">
+    <button class="modal-close" id="orderClose">&times;</button>
+
+    <!-- Plan header -->
+    <div class="order-header">
+      <div class="order-plan-badge" id="orderPlanBadge">Pro Plan</div>
+      <h2 class="order-title" id="orderTitle">Request Your Server</h2>
+      <p class="order-subtitle" id="orderSubtitle">16GB RAM VPS — $10/mo</p>
+    </div>
+
+    <!-- ── STEP 1 : User info + Email OTP ──────────────────────────────── -->
+    <div id="orderStep1" class="order-form" style="display:flex;flex-direction:column;gap:14px;">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+        <div class="form-group">
+          <label class="form-label" for="ordFirstName">First Name</label>
+          <input class="form-input" type="text" id="ordFirstName" placeholder="First Name" autocomplete="given-name" required />
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="ordLastName">Last Name</label>
+          <input class="form-input" type="text" id="ordLastName" placeholder="Last Name" autocomplete="family-name" required />
+        </div>
+      </div>
+
+      <!-- Email row with verify button -->
+      <div class="form-group">
+        <label class="form-label" for="ordEmail">Email Address</label>
+        <div style="display:flex;gap:8px;">
+          <input class="form-input" type="email" id="ordEmail" placeholder="Enter Your Email" autocomplete="email" required style="flex:1;" />
+          <button type="button" id="sendOtpBtn" class="btn-form-submit" style="flex-shrink:0;width:auto;padding:0 16px;font-size:13px;white-space:nowrap;">
+            <span class="btn-text">Send OTP</span>
+            <span class="btn-spinner hidden"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- OTP row (hidden until OTP sent) -->
+      <div id="otpRow" class="hidden">
+        <label class="form-label" for="otpInput">Enter OTP <span style="font-weight:400;color:var(--text-3);font-size:11.5px;">(Check your inbox)</span></label>
+        <div style="display:flex;gap:8px;margin-top:5px;">
+          <input class="form-input" type="text" id="otpInput" placeholder="6-digit code" maxlength="6" inputmode="numeric" style="flex:1;font-size:20px;font-weight:700;letter-spacing:8px;text-align:center;font-family:'JetBrains Mono',monospace;" />
+          <button type="button" id="verifyOtpBtn" class="btn-form-submit" style="flex-shrink:0;width:auto;padding:0 16px;font-size:13px;white-space:nowrap;">
+            <span class="btn-text">Verify</span>
+            <span class="btn-spinner hidden"></span>
+          </button>
+        </div>
+        <p style="font-size:11.5px;color:var(--text-3);margin-top:5px;">
+          Didn't receive? <button type="button" id="resendOtpBtn" style="color:var(--pink-deep);font-size:11.5px;font-weight:600;background:none;border:none;cursor:pointer;padding:0;font-family:inherit;">Resend OTP</button>
+        </p>
+      </div>
+
+      <!-- Verified badge (hidden until verified) -->
+      <div id="emailVerifiedBadge" class="hidden" style="display:flex;align-items:center;gap:8px;background:rgba(52,199,89,.08);border:1px solid rgba(52,199,89,.2);border-radius:var(--r-md);padding:10px 14px;">
+        <svg width="18" height="18" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="rgba(52,199,89,.15)"/><path d="M9 12l2 2 4-4" stroke="#34c759" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span style="font-size:13px;font-weight:600;color:#25a244;">Email verified successfully!</span>
+      </div>
+
+      <div class="form-error hidden" id="step1Error"></div>
+
+      <!-- Continue button (hidden until OTP verified) -->
+      <button type="button" id="continueToStep2Btn" class="btn-form-submit hidden">
+        <span class="btn-text">Continue →</span>
+        <span class="btn-spinner hidden"></span>
+      </button>
+    </div>
+
+    <!-- ── STEP 2a : FREE PLAN — YouTube + Upload ───────────────────────── -->
+    <div id="orderStep2Free" class="order-form hidden" style="display:none;flex-direction:column;gap:14px;">
+      <div class="yt-section">
+        <div class="yt-card">
+          <div class="yt-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z" fill="#FF0000"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#ffffff"/></svg>
+          </div>
+          <div class="yt-card-content">
+            <h4>Step 1 — Subscribe to our YouTube</h4>
+            <p>Subscribe to our channel to claim your <strong>free server</strong>. Take a screenshot showing you are subscribed.</p>
+            <a href="http://youtube.com/@tech-ofy" target="_blank" rel="noopener" class="yt-link">Subscribe Now →</a>
+          </div>
+        </div>
+
+        <div class="upload-section" style="margin-top:10px;">
+          <label class="form-label">Step 2 — Upload Subscription Screenshot</label>
+          <div class="upload-drop-zone" id="uploadZone">
+            <input type="file" id="screenshotInput" accept="image/*" class="upload-input" />
+            <div class="upload-placeholder" id="uploadPlaceholder">
+              <div class="upload-icon">
+                <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" stroke="#ec4899" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <p class="upload-text">Tap to upload screenshot</p>
+              <p class="upload-hint">PNG, JPG, WEBP — max 8 MB</p>
+            </div>
+            <div class="upload-preview hidden" id="uploadPreview">
+              <img id="previewImg" src="" alt="Screenshot preview" />
+              <div class="upload-preview-info">
+                <span id="previewFileName"></span>
+                <button type="button" class="upload-remove" id="removeUpload">Remove</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-error hidden" id="step2FreeError"></div>
+      <button type="button" id="orderSubmitFree" class="btn-form-submit">
+        <span class="btn-text">Submit Free Order</span>
+        <span class="btn-spinner hidden"></span>
+      </button>
+      <p class="order-security-note">
+        <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#34c759" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Your info is encrypted and never shared
+      </p>
+    </div>
+
+    <!-- ── STEP 2b : PAID PLAN — Summary ───────────────────────────────── -->
+    <div id="orderStep2Paid" class="order-form hidden" style="display:none;flex-direction:column;gap:14px;">
+      <div style="background:var(--pink-pale);border:1px solid var(--pink-border);border-radius:var(--r-md);padding:16px 18px;">
+        <p style="margin:0 0 10px;font-size:12px;font-weight:700;color:var(--text-3);letter-spacing:1px;text-transform:uppercase;">Order Summary</p>
+        <div id="paidOrderSummary" style="display:flex;flex-direction:column;gap:6px;font-size:13.5px;color:var(--text);"></div>
+      </div>
+      <div style="background:#fff9f9;border:1px solid rgba(236,72,153,.12);border-radius:var(--r-md);padding:14px 16px;">
+        <p style="margin:0;font-size:13px;color:var(--text-2);line-height:1.6;">
+          After placing your order, our team will email you <strong>payment instructions</strong>.
+          Once payment is confirmed, your server will be live within <strong>2–6 hours</strong>.<br/><br/>
+          Need faster help? <a href="https://t.me/Techofy" target="_blank" rel="noopener" style="color:var(--pink-deep);font-weight:600;">Chat on Telegram</a>
+        </p>
+      </div>
+
+      <div class="form-error hidden" id="step2PaidError"></div>
+      <button type="button" id="orderSubmitPaid" class="btn-form-submit">
+        <span class="btn-text">Confirm Order</span>
+        <span class="btn-spinner hidden"></span>
+      </button>
+      <p class="order-security-note">
+        <svg width="12" height="12" fill="none" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#34c759" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Secure And Fast 
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<!-- SUCCESS MODAL -->
+<div class="modal-overlay" id="successModal" role="dialog" aria-modal="true">
+  <div class="modal-glass success-modal">
+    <div class="success-animation">
+      <div class="checkmark">
+        <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5 12l4.5 4.5L19 7" stroke="#ffffff" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+    <h2 class="success-title">Order Placed!</h2>
+    <p class="success-text">Your order has been received. Our team is provisioning your server and will deliver your credentials via email shortly.</p>
+    <div class="success-order-id">Order ID: <strong id="successOrderId">—</strong></div>
+    <button class="btn-form-submit" id="successClose">Done</button>
+  </div>
+</div>
+
+
+<!-- VPN/PROXY BLOCKED OVERLAY -->
+<div id="vpnBlockOverlay" style="display:none;position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,0.72);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);align-items:center;justify-content:center;padding:20px;">
+  <div style="background:#fff;border-radius:20px;max-width:420px;width:100%;padding:40px 32px;text-align:center;box-shadow:0 24px 64px rgba(0,0,0,0.25);animation:scaleIn .3s cubic-bezier(.34,1.56,.64,1) forwards;">
+    <div style="width:72px;height:72px;background:linear-gradient(135deg,#fee2e2,#fecaca);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:32px;">&#x1F6E1;&#xFE0F;</div>
+    <h2 style="font-size:22px;font-weight:800;color:#1f2937;margin:0 0 10px;">VPN / Proxy Detected</h2>
+    <p style="color:#6b7280;font-size:15px;line-height:1.65;margin:0 0 20px;">
+      We have detected that you are using a <strong>VPN, proxy, or anonymizing service</strong>.<br/><br/>
+      For the security of our platform and fair usage, Techofy Cloud is not accessible through VPN or proxy connections.
+    </p>
+    <div style="background:#fef2f2;border:1px solid #fecaca;border-radius:12px;padding:14px 18px;margin-bottom:24px;">
+      <p style="margin:0;color:#991b1b;font-size:14px;font-weight:600;">Please disable your VPN or proxy and reload the page.</p>
+    </div>
+    <button onclick="location.reload()" style="background:linear-gradient(135deg,#ec4899,#f97316);color:#fff;border:none;border-radius:12px;padding:14px 28px;font-size:15px;font-weight:700;cursor:pointer;width:100%;">
+      I've Disabled VPN — Reload
+    </button>
+  </div>
+</div>
+
+<!-- UNAVAILABLE MODAL -->
+<div class="modal-overlay" id="unavailableModal" role="dialog" aria-modal="true">
+  <div class="modal-glass" style="max-width:400px;text-align:center;padding:40px 32px;">
+    <div style="width:68px;height:68px;background:linear-gradient(135deg,#fef3c7,#fde68a);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:30px;">&#x23F3;</div>
+    <h2 style="font-size:20px;font-weight:800;color:#1f2937;margin:0 0 10px;">Temporarily Unavailable</h2>
+    <p style="color:#6b7280;font-size:15px;line-height:1.6;margin:0 0 24px;">
+      Free <strong id="unavailablePlanType">VPS</strong> servers are temporarily unavailable.<br/>Please check back soon or contact our support team.
+    </p>
+    <button id="unavailableClose" style="background:linear-gradient(135deg,#ec4899,#f97316);color:#fff;border:none;border-radius:12px;padding:14px 24px;font-size:15px;font-weight:700;cursor:pointer;width:100%;">
+      Got it
+    </button>
+  </div>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script>
+const API_BASE = 'https://e-dev.fun';
+// ── STATE ──────────────────────────────────────────────────────────────
+let currentUser = null;   
+let activePlan  = null; 
+let verifyToken = null;   
+let otpCooldown = false;
+
+// ── HELPERS ────────────────────────────────────────────────────────────
+const $ = id => document.getElementById(id);
+
+function showModal(id) { $(id).classList.add('active'); document.body.style.overflow = 'hidden'; }
+function hideModal(id) { $(id).classList.remove('active'); document.body.style.overflow = '';   }
+
+function showToast(msg, type = 'info') {
+  const c = $('toastContainer');
+  const t = document.createElement('div');
+  t.className = `toast ${type}`;
+  t.innerHTML = `<span class="toast-icon"></span><span>${msg}</span>`;
+  c.appendChild(t);
+  setTimeout(() => { t.classList.add('removing'); setTimeout(() => t.remove(), 300); }, 3800);
+}
+
+function setLoading(btn, on) {
+  if (!btn) return;
+  const txt = btn.querySelector('.btn-text');
+  const spin = btn.querySelector('.btn-spinner');
+  if (txt)  txt.classList.toggle('hidden', on);
+  if (spin) spin.classList.toggle('hidden', !on);
+  btn.disabled = on;
+}
+
+function showErr(id, msg) {
+  const el = $(id);
+  if (!el) return;
+  el.textContent = msg;
+  el.classList.remove('hidden');
+}
+
+function hideErr(id) {
+  const el = $(id);
+  if (el) el.classList.add('hidden');
+}
+
+async function api(path, opts = {}) {
+  const res = await fetch(API_BASE + path, {
+    headers: { 'Content-Type': 'application/json', ...(opts.headers || {}) },
+    ...opts,
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || 'Request failed');
+  return data;
+}
+
+// ── NAVBAR SCROLL ──────────────────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  $('navbar').classList.toggle('scrolled', window.scrollY > 10);
+});
+$('navHamburger').addEventListener('click', () => $('navMobile').classList.toggle('open'));
+document.querySelectorAll('.nav-mobile a').forEach(a =>
+  a.addEventListener('click', () => $('navMobile').classList.remove('open'))
+);
+
+// ── AUTH STATE NAV ─────────────────────────────────────────────────────
+function updateNav() {
+  if (currentUser) {
+    $('loginBtn')?.classList.add('hidden');
+    $('signupBtn')?.classList.add('hidden');
+    $('userMenuBtn')?.classList.remove('hidden');
+    $('userAvatarNav').textContent = currentUser.name[0].toUpperCase();
+    $('userNameNav').textContent   = currentUser.name.split(' ')[0];
+  } else {
+    $('loginBtn')?.classList.remove('hidden');
+    $('signupBtn')?.classList.remove('hidden');
+    $('userMenuBtn')?.classList.add('hidden');
+  }
+}
+
+// ── AUTH MODAL (Sign In / Register — navbar only) ──────────────────────
+function openAuth(tab = 'login') { switchTab(tab); showModal('authModal'); }
+['loginBtn','loginBtnMobile'].forEach(id => document.getElementById(id)?.addEventListener('click', () => {
+  document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
+}));
+['signupBtn','signupBtnMobile'].forEach(id => document.getElementById(id)?.addEventListener('click', () => {
+  document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' });
+}));
+$('authClose').addEventListener('click', () => hideModal('authModal'));
+$('authModal').addEventListener('click', e => { if (e.target === $('authModal')) hideModal('authModal'); });
+
+function switchTab(tab) {
+  document.querySelectorAll('.auth-tab').forEach(t => t.classList.toggle('active', t.dataset.tab === tab));
+  $('loginForm').classList.toggle('hidden',   tab !== 'login');
+  $('registerForm').classList.toggle('hidden', tab !== 'register');
+}
+document.querySelectorAll('.auth-tab').forEach(tab => tab.addEventListener('click', () => switchTab(tab.dataset.tab)));
+
+// Simple localStorage-based auth (for nav bar only — not required for ordering)
+$('loginForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const email = $('loginEmail').value.trim(), pass = $('loginPassword').value;
+  hideErr('loginError');
+  if (!email || !pass) return showErr('loginError', 'Please fill all fields.');
+  setLoading($('loginSubmit'), true);
+  await new Promise(r => setTimeout(r, 700));
+  const stored = localStorage.getItem('tc_u_' + email);
+  if (stored) {
+    const u = JSON.parse(stored);
+    if (u.password === pass) {
+      currentUser = u; hideModal('authModal'); updateNav();
+      showToast('Welcome back, ' + u.name.split(' ')[0] + '! ', 'success');
+    } else { showErr('loginError', 'Incorrect password.'); }
+  } else { showErr('loginError', 'No account found. Please sign up.'); }
+  setLoading($('loginSubmit'), false);
+});
+
+$('registerForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  const name = $('regName').value.trim(), email = $('regEmail').value.trim(), pass = $('regPassword').value;
+  hideErr('registerError');
+  if (!name || !email || !pass) return showErr('registerError', 'Please fill all fields.');
+  if (pass.length < 6) return showErr('registerError', 'Password min. 6 characters.');
+  setLoading($('registerSubmit'), true);
+  await new Promise(r => setTimeout(r, 700));
+  const user = { name, email, password: pass };
+  localStorage.setItem('tc_u_' + email, JSON.stringify(user));
+  currentUser = user; hideModal('authModal'); updateNav();
+  showToast('Account created! Welcome, ' + name.split(' ')[0] + ' ', 'success');
+  setLoading($('registerSubmit'), false);
+});
+
+$('userMenuBtn').addEventListener('click', () => {
+  if (confirm('Sign out of Techofy Cloud?')) {
+    currentUser = null; updateNav(); showToast('Signed out.', 'info');
+  }
+});
+
+// Hero button → scroll to pricing
+$('heroGetStarted').addEventListener('click', () => document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' }));
+
+// ── PRICING TOGGLE ─────────────────────────────────────────────────────
+function switchPricing(type) {
+  const show = type === 'vps' ? 'vpsPlans' : 'rdpPlans';
+  const hide = type === 'vps' ? 'rdpPlans' : 'vpsPlans';
+  $(show).style.display = '';
+  $(hide).style.display = 'none';
+  $('toggleVPS').classList.toggle('active', type === 'vps');
+  $('toggleRDP').classList.toggle('active', type === 'rdp');
+  attachPlanBtns();
+}
+
+// ── ORDER MODAL HELPERS ────────────────────────────────────────────────
+function resetOrderModal() {
+  verifyToken = null;
+  // Reset step 1
+  ['ordFirstName','ordLastName','ordEmail','otpInput'].forEach(id => { const el = $(id); if(el) el.value = ''; });
+  hideErr('step1Error');
+  $('otpRow').classList.add('hidden');
+  $('emailVerifiedBadge').classList.add('hidden');
+  $('continueToStep2Btn').classList.add('hidden');
+  $('sendOtpBtn').disabled = false;
+  // Reset steps 2
+  $('orderStep1').style.display = '';
+  $('orderStep2Free').style.display = 'none';
+  $('orderStep2Free').classList.add('hidden');
+  $('orderStep2Paid').style.display = 'none';
+  $('orderStep2Paid').classList.add('hidden');
+  hideErr('step2FreeError');
+  hideErr('step2PaidError');
+  // Reset upload
+  if ($('screenshotInput')) $('screenshotInput').value = '';
+  uploadedScreenshotFile = null;
+  $('uploadPlaceholder')?.classList.remove('hidden');
+  $('uploadPreview')?.classList.add('hidden');
+}
+
+function openOrderModal(plan) {
+  activePlan = plan;
+  resetOrderModal();
+  const isFree = plan.price === 'Free';
+  $('orderPlanBadge').textContent = (plan.type + ' ' + plan.plan).replace(/rdp-|vps-/i,'').replace(/\b\w/g,c=>c.toUpperCase()) + ' Plan';
+  $('orderTitle').textContent = isFree ? 'Get Your Free Server' : 'Request Your Server';
+  $('orderSubtitle').textContent = plan.ram + ' ' + plan.type + ' — ' + plan.price;
+  showModal('orderModal');
+}
+
+// ── ATTACH PLAN BUTTONS ────────────────────────────────────────────────
+function attachPlanBtns() {
+  document.querySelectorAll('.btn-plan').forEach(btn => btn.replaceWith(btn.cloneNode(true)));
+  document.querySelectorAll('.btn-plan').forEach(btn => {
+    btn.addEventListener('click', () => {
+      openOrderModal({
+        plan:  btn.dataset.plan,
+        price: btn.dataset.price,
+        ram:   btn.dataset.ram,
+        type:  btn.dataset.type || 'VPS',
+      });
+    });
+  });
+}
+attachPlanBtns();
+
+$('orderClose').addEventListener('click', () => hideModal('orderModal'));
+$('orderModal').addEventListener('click', e => { if (e.target === $('orderModal')) hideModal('orderModal'); });
+
+// ── SEND OTP ───────────────────────────────────────────────────────────
+async function sendOtp() {
+  const firstName = $('ordFirstName').value.trim();
+  const lastName  = $('ordLastName').value.trim();
+  const email     = $('ordEmail').value.trim().toLowerCase();
+  hideErr('step1Error');
+
+  if (!firstName || !lastName) return showErr('step1Error', 'Please enter your first and last name.');
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) return showErr('step1Error', 'Please enter a valid email address.');
+  if (otpCooldown) return showErr('step1Error', 'Please wait before requesting another OTP.');
+
+  setLoading($('sendOtpBtn'), true);
+  try {
+    await api('/api/otp/send', {
+      method:  'POST',
+      body:    JSON.stringify({ firstName, lastName, email }),
+    });
+    $('otpRow').classList.remove('hidden');
+    $('otpInput').focus();
+    showToast('OTP sent to ' + email + ' — check your inbox!', 'success');
+    // 60s cooldown
+    otpCooldown = true;
+    setTimeout(() => { otpCooldown = false; }, 60000);
+  } catch (err) {
+    showErr('step1Error', err.message || 'Failed to send OTP. Please try again.');
+  }
+  setLoading($('sendOtpBtn'), false);
+}
+$('sendOtpBtn').addEventListener('click', sendOtp);
+$('resendOtpBtn')?.addEventListener('click', sendOtp);
+
+// ── VERIFY OTP ─────────────────────────────────────────────────────────
+$('verifyOtpBtn').addEventListener('click', async () => {
+  const email = $('ordEmail').value.trim().toLowerCase();
+  const otp   = $('otpInput').value.trim();
+  hideErr('step1Error');
+  if (!otp || otp.length !== 6) return showErr('step1Error', 'Please enter the 6-digit OTP.');
+
+  setLoading($('verifyOtpBtn'), true);
+  try {
+    const data = await api('/api/otp/verify', {
+      method: 'POST',
+      body:   JSON.stringify({ email, otp }),
+    });
+    verifyToken = data.verifyToken;
+    // Show verified state
+    $('emailVerifiedBadge').classList.remove('hidden');
+    $('emailVerifiedBadge').style.display = 'flex';
+    $('otpRow').classList.add('hidden');
+    $('sendOtpBtn').disabled = true;
+    $('continueToStep2Btn').classList.remove('hidden');
+    showToast('Email verified!', 'success');
+  } catch (err) {
+    showErr('step1Error', err.message || 'Invalid OTP. Please try again.');
+  }
+  setLoading($('verifyOtpBtn'), false);
+});
+
+// ── CONTINUE TO STEP 2 ─────────────────────────────────────────────────
+$('continueToStep2Btn').addEventListener('click', () => {
+  if (!verifyToken) return showErr('step1Error', 'Please verify your email first.');
+  const isFree = activePlan?.price === 'Free';
+  $('orderStep1').style.display = 'none';
+
+  if (isFree) {
+    $('orderStep2Free').style.display = 'flex';
+    $('orderStep2Free').classList.remove('hidden');
+  } else {
+    // Populate paid order summary
+    const sum = $('paidOrderSummary');
+    if (sum) {
+      sum.innerHTML = `
+        <div style="display:flex;justify-content:space-between;">
+          <span style="color:var(--text-3);">Plan</span>
+          <strong>${activePlan.type} ${activePlan.plan.charAt(0).toUpperCase()+activePlan.plan.slice(1)}</strong>
+        </div>
+        <div style="display:flex;justify-content:space-between;">
+          <span style="color:var(--text-3);">RAM</span>
+          <strong>${activePlan.ram}</strong>
+        </div>
+        <div style="display:flex;justify-content:space-between;margin-top:4px;padding-top:10px;border-top:1px solid var(--pink-border);">
+          <span style="color:var(--text-3);">Price</span>
+          <strong style="color:var(--pink-deep);font-size:16px;">${activePlan.price}</strong>
+        </div>`;
+    }
+    $('orderStep2Paid').style.display = 'flex';
+    $('orderStep2Paid').classList.remove('hidden');
+  }
+});
+
+// Pre-check free claim when order modal opens
+document.addEventListener('click', async function(e) {
+  const btn = e.target.closest('.btn-plan');
+  if (!btn) return;
+  const price = btn.dataset.price || '';
+  const isFreeBtn = price === 'Free' || price === '' || btn.textContent.toLowerCase().includes('free');
+  if (isFreeBtn) {
+    // Check if already claimed
+    const claimed = await checkFreeClaimed();
+    if (claimed) {
+      // Show claim message instead of order modal
+      showToast('⚠️ This device already claimed a free server. Choose a paid plan!', 'error');
+      return;
+    }
+  }
+}, true);
+
+
+// ── DEVICE FINGERPRINT ─────────────────────────────────────────────────────
+const STORAGE_KEY = 'tcfy_fp_v1';
+const COOKIE_KEY  = 'tcfy_claimed';
+
+function getCanvasFingerprint() {
+  try {
+    const c = document.createElement('canvas');
+    const ctx = c.getContext('2d');
+    ctx.textBaseline = 'top';
+    ctx.font = '14px Arial';
+    ctx.fillStyle = '#ec4899';
+    ctx.fillText('Techofy 🌐 FP', 2, 2);
+    ctx.fillStyle = 'rgba(102,204,0,0.7)';
+    ctx.fillRect(125, 1, 62, 20);
+    return c.toDataURL().slice(-64);
+  } catch(e) { return 'nocanvas'; }
+}
+
+function getDeviceFingerprint() {
+  try {
+    const parts = [
+      navigator.userAgent || '',
+      navigator.language || '',
+      screen.width + 'x' + screen.height + 'x' + screen.colorDepth,
+      Intl.DateTimeFormat().resolvedOptions().timeZone || '',
+      navigator.platform || '',
+      navigator.hardwareConcurrency || '',
+      navigator.deviceMemory || '',
+      getCanvasFingerprint(),
+      new Date().getTimezoneOffset(),
+    ].join('|');
+    // Simple hash
+    let hash = 0;
+    for (let i = 0; i < parts.length; i++) {
+      const c = parts.charCodeAt(i);
+      hash = ((hash << 5) - hash) + c;
+      hash = hash & hash;
+    }
+    return 'fp_' + Math.abs(hash).toString(36) + '_' + parts.length;
+  } catch(e) { return 'fp_fallback_' + Date.now().toString(36); }
+}
+
+function setCookie(name, value, days) {
+  const d = new Date();
+  d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+  document.cookie = `${name}=${value};expires=${d.toUTCString()};path=/;SameSite=Strict`;
+}
+
+function getCookie(name) {
+  const v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+  return v ? v[2] : null;
+}
+
+function markFreeClaimed(fp) {
+  try { localStorage.setItem(STORAGE_KEY, fp + ':claimed'); } catch(e) {}
+  setCookie(COOKIE_KEY, '1', 365);
+}
+
+function isLocallyMarkedClaimed() {
+  try {
+    const ls = localStorage.getItem(STORAGE_KEY);
+    if (ls && ls.includes(':claimed')) return true;
+  } catch(e) {}
+  return getCookie(COOKIE_KEY) === '1';
+}
+
+let _deviceFP = null;
+function getOrCreateFingerprint() {
+  if (_deviceFP) return _deviceFP;
+  try {
+    let stored = localStorage.getItem('tcfy_fp');
+    if (!stored) {
+      stored = getDeviceFingerprint();
+      localStorage.setItem('tcfy_fp', stored);
+    }
+    _deviceFP = stored;
+  } catch(e) {
+    _deviceFP = getDeviceFingerprint();
+  }
+  return _deviceFP;
+}
+
+// Check if free already claimed (local + server)
+async function checkFreeClaimed() {
+  // Local check first (fast)
+  if (isLocallyMarkedClaimed()) return true;
+  // Server check
+  try {
+    const fp = getOrCreateFingerprint();
+    const res = await fetch(API_BASE + '/api/free-check', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ fingerprint: fp }),
+    });
+    const data = await res.json();
+    if (data.claimed) {
+      markFreeClaimed(fp);
+      return true;
+    }
+  } catch(e) {}
+  return false;
+}
+
+// ── SUBMIT ORDER (both free + paid) ────────────────────────────────────
+async function submitOrder(isFree) {
+  if (!activePlan || !verifyToken) return;
+  const email     = $('ordEmail').value.trim().toLowerCase();
+  const errId     = isFree ? 'step2FreeError' : 'step2PaidError';
+  const submitBtn = $(isFree ? 'orderSubmitFree' : 'orderSubmitPaid');
+  hideErr(errId);
+
+  // For free plan, verify device hasn't claimed before
+  if (isFree) {
+    setLoading(submitBtn, true);
+    const alreadyClaimed = await checkFreeClaimed();
+    if (alreadyClaimed) {
+      setLoading(submitBtn, false);
+      return showErr(errId,
+        '⚠️ This device has already claimed a free server. Each device can only get one free plan. Please choose a paid plan for more servers.'
+      );
+    }
+    setLoading(submitBtn, false);
+  }
+
+  // For free plan, check screenshot
+  let screenshotFile = null;
+  if (isFree) {
+    screenshotFile = uploadedScreenshotFile || $('screenshotInput')?.files[0];
+    if (!screenshotFile) return showErr(errId, 'Please upload your YouTube subscription screenshot.');
+  }
+
+  setLoading(submitBtn, true);
+  try {
+    const fp = getOrCreateFingerprint();
+    const fd = new FormData();
+    fd.append('email',             email);
+    fd.append('verifyToken',       verifyToken);
+    fd.append('planType',          activePlan.type.toUpperCase());
+    fd.append('planName',          activePlan.plan);
+    fd.append('planPrice',         activePlan.price);
+    fd.append('planRam',           activePlan.ram);
+    fd.append('isFree',            String(isFree));
+    fd.append('deviceFingerprint', fp);
+    if (screenshotFile) fd.append('screenshot', screenshotFile);
+
+    const res  = await fetch(API_BASE + '/api/orders', { method: 'POST', body: fd });
+    const data = await res.json().catch(() => ({}));
+    if (!res.ok) throw new Error(data.error || 'Order failed. Please try again.');
+
+    // Mark free as claimed locally
+    if (isFree) markFreeClaimed(fp);
+
+    hideModal('orderModal');
+    $('successOrderId').textContent = data.orderId;
+    showModal('successModal');
+    showToast('Order placed successfully!', 'success');
+  } catch (err) {
+    showErr(errId, err.message || 'Failed to place order. Please try again.');
+  }
+  setLoading(submitBtn, false);
+}
+
+$('orderSubmitFree').addEventListener('click', () => submitOrder(true));
+$('orderSubmitPaid').addEventListener('click', () => submitOrder(false));
+
+// ── SUCCESS MODAL ──────────────────────────────────────────────────────
+$('successClose').addEventListener('click', () => hideModal('successModal'));
+
+// ── FILE UPLOAD (screenshot for free plan) ─────────────────────────────
+let uploadedScreenshotFile = null;
+const uploadZone      = $('uploadZone');
+const screenshotInput = $('screenshotInput');
+uploadZone?.addEventListener('dragover', e => { e.preventDefault(); uploadZone.classList.add('drag-over'); });
+uploadZone?.addEventListener('dragleave', () => uploadZone.classList.remove('drag-over'));
+uploadZone?.addEventListener('drop', e => { e.preventDefault(); uploadZone.classList.remove('drag-over'); if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]); });
+screenshotInput?.addEventListener('change', () => { if (screenshotInput.files[0]) handleFile(screenshotInput.files[0]); });
+function handleFile(file) {
+  if (file.size > 8 * 1024 * 1024) { showToast('File too large. Max 8 MB.', 'error'); return; }
+  uploadedScreenshotFile = file;
+  const reader = new FileReader();
+  reader.onload = () => {
+    $('previewImg').src         = reader.result;
+    $('previewFileName').textContent = file.name;
+    $('uploadPlaceholder').classList.add('hidden');
+    $('uploadPreview').classList.remove('hidden');
+  };
+  reader.readAsDataURL(file);
+}
+$('removeUpload')?.addEventListener('click', () => {
+  screenshotInput.value = '';
+  uploadedScreenshotFile = null;
+  $('uploadPlaceholder').classList.remove('hidden');
+  $('uploadPreview').classList.add('hidden');
+});
+
+// ── PASSWORD TOGGLES ───────────────────────────────────────────────────
+document.querySelectorAll('.pw-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const inp = document.getElementById(btn.dataset.target);
+    if (inp) inp.type = inp.type === 'password' ? 'text' : 'password';
+  });
+});
+
+// ── COUNTER ANIMATION ──────────────────────────────────────────────────
+function animateCount(el, target) {
+  let start = 0;
+  const dur = 1800;
+  const step = ts => {
+    if (!start) start = ts;
+    const p    = Math.min((ts - start) / dur, 1);
+    const ease = 1 - Math.pow(1 - p, 3);
+    el.textContent = Math.floor(ease * target).toLocaleString();
+    if (p < 1) requestAnimationFrame(step);
+    else el.textContent = target.toLocaleString();
+  };
+  requestAnimationFrame(step);
+}
+const statsObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      ['statUsers','statServers','statRDP','statVPS'].forEach(id => {
+        const el = $(id);
+        if (el && el.dataset.target) animateCount(el, parseInt(el.dataset.target));
+      });
+      statsObs.disconnect();
+    }
+  });
+}, { threshold: 0.3 });
+const statsSec = document.querySelector('.stats-bar');
+if (statsSec) statsObs.observe(statsSec);
+
+// ── FOOTER YEAR ────────────────────────────────────────────────────────
+const fy = $('footerYear');
+if (fy) fy.textContent = new Date().getFullYear();
+
+
+// ── VPN/PROXY DETECTION ────────────────────────────────────────────────
+(async function checkVPN() {
+  try {
+    const res = await fetch(API_BASE + '/api/check-ip');
+    if (res.ok) {
+      const d = await res.json();
+      if (d.vpn) {
+        const el = document.getElementById('vpnBlockOverlay');
+        if (el) { el.style.display = 'flex'; document.body.style.overflow = 'hidden'; }
+      }
+    }
+  } catch(e) { /* fail silently — dont block legit users on API error */ }
+})();
+
+// ── SERVER STATUS (VPS/RDP on/off) ─────────────────────────────────────
+let _vpsOn = true;
+let _rdpOn = true;
+(async function checkStatus() {
+  try {
+    const res = await fetch(API_BASE + '/api/status');
+    if (res.ok) {
+      const d = await res.json();
+      _vpsOn = d.vps !== 'off';
+      _rdpOn = d.rdp !== 'off';
+    }
+  } catch(e) {}
+})();
+
+// Unavailable modal close
+document.getElementById('unavailableClose')?.addEventListener('click', () => {
+  hideModal('unavailableModal');
+});
+
+// ── FREE PLAN BUTTON INTERCEPT (unavailable check) ─────────────────────
+// Override the existing free-plan click listener to also check status
+document.addEventListener('click', function(e) {
+  const btn = e.target.closest('.btn-plan');
+  if (!btn) return;
+  const price = btn.dataset.price || '';
+  const planType = (btn.dataset.type || '').toUpperCase();
+  const isFreeBtn = price === 'Free' || price === '' || btn.textContent.toLowerCase().includes('free');
+  if (!isFreeBtn) return;
+  
+  const isOff = (planType === 'VPS' && !_vpsOn) || (planType === 'RDP' && !_rdpOn);
+  if (isOff) {
+    const planEl = document.getElementById('unavailablePlanType');
+    if (planEl) planEl.textContent = planType;
+    showModal('unavailableModal');
+    e.stopImmediatePropagation();
+    e.preventDefault();
+  }
+}, true);
+
+// ── ESC TO CLOSE MODALS ────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    ['authModal','orderModal','successModal'].forEach(id => {
+      if ($(id)?.classList.contains('active')) hideModal(id);
+    });
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+  <meta name="theme-color" content="#ec4899"/>
+  <title>Track Order — Techofy Cloud</title>
+  
+  <meta name="description" content="Track your Techofy Cloud order status. Enter your Order ID to see the live deployment and activation status of your VPS or RDP server." />
+  <meta name="robots" content="index, follow"/>
+  <meta name="keywords" content="track order, Techofy Cloud track, VPS status, RDP order status, track server deployment, Techofy Cloud, track VPS, track RDP"/>
+  <meta name="author" content="Techofy Cloud"/>
+  <link rel="canonical" href="https://techofy.xyz/tracking"/>
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://techofy.xyz/tracking"/>
+  <meta property="og:title" content="Track Order — Techofy Cloud"/>
+  <meta property="og:description" content="Track your Techofy Cloud order status. Enter your Order ID to see the live deployment and activation status of your VPS or RDP server." />
+  <meta property="og:site_name" content="Techofy Cloud"/>
+  <meta property="og:image" content="https://techofy.xyz/favicon.svg"/>
+
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:url" content="https://techofy.xyz/tracking"/>
+  <meta name="twitter:title" content="Track Order — Techofy Cloud"/>
+  <meta name="twitter:description" content="Track your Techofy Cloud VPS or RDP server order status in real time." />
+  <meta name="twitter:image" content="https://techofy.xyz/favicon.svg"/>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Techofy Cloud",
+    "url": "https://techofy.xyz/"
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --pink:#f472b6;--pink-deep:#ec4899;--pink-soft:#fce7f3;--pink-pale:#fdf2f8;
+  --pink-border:rgba(236,72,153,.18);--white:#fff;--off:#fafafa;
+  --text:#111;--text-2:#555;--text-3:#999;--green:#34c759;
+  --border:rgba(0,0,0,.08);--r-md:14px;--r-lg:20px;--r-full:999px;
+  --spring:cubic-bezier(.34,1.56,.64,1);
+  --shadow-lg:0 12px 48px rgba(0,0,0,.1);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+body{font-family:'Sora',sans-serif;background:linear-gradient(160deg,#fff 0%,#fdf2f8 55%,#fce7f3 100%);min-height:100vh;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;border:none;background:none;}
+.hidden{display:none!important;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+@keyframes spin{to{transform:rotate(360deg);}}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.4;}}
+
+/* ── NAVBAR ── */
+.navbar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  height:58px;
+  background:rgba(255,255,255,.92);
+  backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);
+  border-bottom:1px solid rgba(0,0,0,.06);
+}
+.nav-inner{
+  max-width:1100px;margin:0 auto;
+  padding:0 16px;height:100%;
+  display:flex;align-items:center;gap:8px;
+}
+.logo{
+  font-size:16px;font-weight:700;color:var(--text);
+  display:flex;align-items:center;gap:6px;
+  flex-shrink:0;
+}
+.logo-icon{width:20px;height:20px;flex-shrink:0;}
+.nav-back{
+  margin-left:auto;font-size:12.5px;font-weight:600;
+  color:var(--pink-deep);
+  display:flex;align-items:center;gap:4px;
+  padding:7px 14px;
+  border:1.5px solid var(--pink-border);
+  border-radius:var(--r-full);
+  transition:all .2s;
+  white-space:nowrap;
+  flex-shrink:0;
+}
+.nav-back:hover{background:var(--pink-soft);}
+
+/* ── MAIN ── */
+.main{
+  min-height:100vh;
+  padding-top:calc(58px + 40px);
+  padding-bottom:60px;
+  padding-left:16px;
+  padding-right:16px;
+  display:flex;flex-direction:column;align-items:center;
+}
+
+/* ── PAGE HEADER ── */
+.page-header{
+  text-align:center;margin-bottom:28px;
+  animation:fadeUp .6s var(--spring) forwards;
+  width:100%;max-width:540px;
+}
+.page-badge{
+  display:inline-block;font-size:10.5px;font-weight:700;
+  letter-spacing:1px;text-transform:uppercase;
+  color:var(--pink-deep);
+  background:rgba(236,72,153,.08);
+  border:1px solid var(--pink-border);
+  padding:5px 13px;border-radius:var(--r-full);
+  margin-bottom:12px;
+}
+.page-title{
+  font-size:clamp(26px,6vw,44px);
+  font-weight:800;letter-spacing:-1.5px;color:var(--text);margin-bottom:8px;
+}
+.page-sub{font-size:14px;color:var(--text-2);line-height:1.5;padding:0 4px;}
+
+/* ── SEARCH CARD ── */
+.search-card{
+  width:100%;max-width:540px;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--r-lg);
+  padding:22px 20px;
+  box-shadow:var(--shadow-lg);
+  margin-bottom:24px;
+  animation:fadeUp .6s .1s var(--spring) both;
+}
+.search-label{font-size:12px;font-weight:600;color:var(--text);margin-bottom:6px;display:block;}
+.search-row{display:flex;gap:10px;flex-wrap:wrap;}
+.search-input{
+  flex:1;min-width:0;
+  font-family:inherit;font-size:15px;font-weight:500;color:var(--text);
+  background:var(--pink-pale);
+  border:1.5px solid var(--pink-border);
+  border-radius:var(--r-md);
+  padding:13px 14px;outline:none;transition:all .2s;
+  text-transform:uppercase;
+  -webkit-appearance:none;
+}
+.search-input::placeholder{text-transform:none;font-weight:400;color:var(--text-3);}
+.search-input:focus{border-color:var(--pink-deep);background:#fff;box-shadow:0 0 0 4px rgba(236,72,153,.09);}
+.search-btn{
+  font-size:14px;font-weight:700;color:#fff;
+  background:linear-gradient(135deg,var(--pink-deep),#c026d3);
+  padding:13px 22px;border-radius:var(--r-md);
+  display:flex;align-items:center;justify-content:center;gap:8px;
+  transition:all .2s;white-space:nowrap;
+  width:100%;
+  -webkit-appearance:none;
+}
+.search-btn:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(236,72,153,.3);}
+.search-btn:disabled{opacity:.6;cursor:not-allowed;transform:none;}
+.spin{width:16px;height:16px;border:2.5px solid rgba(255,255,255,.3);border-top-color:#fff;border-radius:50%;animation:spin .7s linear infinite;flex-shrink:0;}
+.search-err{font-size:13px;color:#ef4444;margin-top:8px;line-height:1.4;}
+
+/* Desktop: button inline */
+@media(min-width:480px){
+  .search-row{flex-wrap:nowrap;}
+  .search-btn{width:auto;}
+}
+
+/* ── RESULT CARD ── */
+.result-card{
+  width:100%;max-width:540px;
+  background:#fff;border:1px solid var(--border);
+  border-radius:var(--r-lg);overflow:hidden;
+  box-shadow:var(--shadow-lg);
+  animation:fadeUp .5s var(--spring) forwards;
+}
+
+/* Result header */
+.result-head{
+  background:linear-gradient(135deg,var(--pink-deep),#c026d3);
+  padding:20px 20px;
+}
+.result-head-top{
+  display:flex;align-items:flex-start;justify-content:space-between;
+  gap:8px;margin-bottom:10px;
+}
+.result-order-id{
+  font-size:11px;font-weight:600;color:rgba(255,255,255,.75);
+  letter-spacing:.5px;word-break:break-all;line-height:1.4;
+}
+.result-status-badge{
+  font-size:11px;font-weight:700;padding:4px 11px;
+  border-radius:var(--r-full);
+  background:rgba(255,255,255,.2);color:#fff;
+  border:1px solid rgba(255,255,255,.3);
+  white-space:nowrap;flex-shrink:0;
+}
+.result-status-badge.active{background:rgba(52,199,89,.25);border-color:rgba(52,199,89,.5);}
+.result-status-badge.pending{background:rgba(251,191,36,.2);border-color:rgba(251,191,36,.4);}
+.result-status-badge.processing{background:rgba(96,165,250,.2);border-color:rgba(96,165,250,.4);}
+.result-status-badge.cancelled{background:rgba(239,68,68,.2);border-color:rgba(239,68,68,.4);}
+.result-plan{font-size:20px;font-weight:800;color:#fff;letter-spacing:-.5px;line-height:1.2;}
+.result-plan-sub{font-size:12.5px;color:rgba(255,255,255,.75);margin-top:4px;}
+
+/* Result body */
+.result-body{padding:20px;}
+.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px;}
+.detail-label{font-size:10.5px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--text-3);margin-bottom:3px;}
+.detail-value{font-size:13.5px;font-weight:600;color:var(--text);word-break:break-word;}
+.detail-value.mono{font-family:monospace;font-size:12px;word-break:break-all;}
+
+/* Timeline */
+.timeline-title{font-size:11px;font-weight:700;letter-spacing:.6px;text-transform:uppercase;color:var(--text-3);margin-bottom:14px;}
+.timeline{display:flex;flex-direction:column;gap:0;}
+.tl-item{display:flex;align-items:flex-start;gap:14px;position:relative;min-height:80px;}
+.tl-item:not(:last-child)::before{content:'';position:absolute;left:13px;top:28px;width:2px;bottom:0;background:var(--pink-border);z-index:0;}
+.tl-dot{width:28px;height:28px;border-radius:50%;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;z-index:1;position:relative;}
+.tl-dot.done{background:#16a34a;border:2px solid #16a34a;color:#fff;}
+.tl-dot.current{background:rgba(236,72,153,.12);border:2.5px solid var(--pink-deep);animation:pulse 2s ease-in-out infinite;}
+.tl-dot.current::after{content:'';display:block;width:10px;height:10px;background:var(--pink-deep);border-radius:50%;position:absolute;}
+.tl-dot.future{background:#f5f5f5;border:2px solid #ddd;}
+.tl-content{padding-bottom:24px;padding-top:4px;flex:1;min-height:56px;}
+.tl-status{font-size:13px;font-weight:600;color:var(--text);line-height:1.3;}
+.tl-note{font-size:12px;color:var(--text-3);margin-top:3px;line-height:1.4;}
+.tl-time{font-size:11px;color:var(--text-3);margin-top:2px;}
+
+/* Refresh button */
+.refresh-row{display:flex;justify-content:center;margin-top:18px;}
+.refresh-btn{
+  font-size:13px;font-weight:600;color:var(--pink-deep);
+  padding:9px 20px;border:1.5px solid var(--pink-border);
+  border-radius:var(--r-full);transition:all .2s;
+  display:flex;align-items:center;gap:6px;
+}
+.refresh-btn:hover{background:var(--pink-soft);}
+
+/* Status boxes */
+.status-box{margin-top:16px;border-radius:12px;padding:14px 16px;}
+.status-box.active-box{background:rgba(52,199,89,.07);border:1.5px solid rgba(52,199,89,.25);}
+.status-box.pending-box{background:var(--pink-pale);border:1px solid var(--pink-border);}
+.status-box-title{font-size:13px;font-weight:700;margin:0 0 5px;}
+.status-box-title.green{color:#16a34a;}
+.status-box-body{font-size:12.5px;color:#555;margin:0;line-height:1.6;}
+.status-box-body a{color:var(--pink-deep);font-weight:600;}
+
+/* Footer */
+.page-footer{margin-top:44px;text-align:center;font-size:12px;color:var(--text-3);}
+.page-footer a{color:var(--pink-deep);font-weight:600;}
+
+/* Tiny phones */
+@media(max-width:360px){
+  .page-title{font-size:24px;}
+  .result-plan{font-size:17px;}
+  .detail-grid{grid-template-columns:1fr;}
+  .nav-back{padding:6px 10px;font-size:11.5px;}
+}
+</style>
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="/" class="logo">
+      <img src="/favicon.svg" alt="" class="logo-icon" onerror="this.style.display='none'"/>
+      Techofy Cloud
+    </a>
+    <a href="/" class="nav-back">← Home</a>
+  </div>
+</nav>
+
+<main class="main">
+  <div class="page-header">
+    <div class="page-badge">Order Tracking</div>
+    <h1 class="page-title">Track Your Order</h1>
+    <p class="page-sub">Enter your Order ID to see the live status of your server.</p>
+  </div>
+
+  <div class="search-card">
+    <label class="search-label" for="trackInput">Order ID</label>
+    <div class="search-row">
+      <input class="search-input" type="text" id="trackInput" placeholder="e.g. TC-LQ3K7Y-A1B2C3" maxlength="30" autocomplete="off" autocorrect="off" autocapitalize="characters" spellcheck="false"/>
+      <button class="search-btn" id="trackBtn">
+        <span id="trackBtnText">Track Order</span>
+        <span class="spin hidden" id="trackSpin"></span>
+      </button>
+    </div>
+    <p class="search-err hidden" id="trackErr"></p>
+  </div>
+
+  <div id="resultCard" class="result-card hidden"></div>
+
+  <div class="page-footer">
+    Need help? <a href="https://t.me/Techofy" target="_blank">Telegram</a> · <a href="mailto:support@techofy.xyz">support@techofy.xyz</a>
+  </div>
+</main>
+
+<script>
+
+const API_BASE = 'https://e-dev.fun';
+
+const STATUS_LABELS = {
+  pending:    { label: 'Order Placed',    cls: 'pending' },
+  processing: { label: 'Processing',      cls: 'processing' },
+  active:     { label: 'Server Active',   cls: 'active' },
+  cancelled:  { label: 'Cancelled',       cls: 'cancelled' },
+};
+const STATUS_ORDER = ['pending', 'processing', 'active'];
+
+function formatDate(d) {
+  if (!d) return '—';
+  const dt = new Date(d);
+  return dt.toLocaleString('en-IN', { timeZone: 'Asia/Kolkata', dateStyle: 'medium', timeStyle: 'short' }) + ' IST';
+}
+
+async function trackOrder(orderId) {
+  const err  = document.getElementById('trackErr');
+  const btn  = document.getElementById('trackBtn');
+  const spn  = document.getElementById('trackSpin');
+  const txt  = document.getElementById('trackBtnText');
+  const card = document.getElementById('resultCard');
+
+  err.classList.add('hidden');
+  card.classList.add('hidden');
+  txt.classList.add('hidden');
+  spn.classList.remove('hidden');
+  btn.disabled = true;
+
+  try {
+    const res  = await fetch(API_BASE + '/api/orders/track/' + encodeURIComponent(orderId.trim().toUpperCase()));
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.error || 'Order not found.');
+    renderResult(data.order);
+  } catch (e) {
+    err.textContent = e.message || 'Failed to fetch order. Please try again.';
+    err.classList.remove('hidden');
+  } finally {
+    txt.classList.remove('hidden');
+    spn.classList.add('hidden');
+    btn.disabled = false;
+  }
+}
+
+function renderResult(o) {
+  const card      = document.getElementById('resultCard');
+  const st        = STATUS_LABELS[o.status] || { label: o.status, cls: '' };
+  const isFree    = o.isFree;
+  const planLabel = `${o.planType} ${o.planName.charAt(0).toUpperCase()}${o.planName.slice(1)} Plan`;
+
+  const steps      = o.status === 'cancelled' ? ['pending', 'cancelled'] : STATUS_ORDER;
+  const currentIdx = steps.indexOf(o.status);
+
+  let tlHtml = '';
+  const allCompleted = o.status === 'active';
+  steps.forEach((step, i) => {
+    const past    = i < currentIdx || allCompleted;
+    const current = i === currentIdx && !allCompleted;
+    const info    = STATUS_LABELS[step] || { label: step };
+    const dotCls  = past ? 'done' : current ? 'current' : 'future';
+    const dotIcon = past ? '&#10003;' : '';
+    const hist    = (o.statusHistory || []).find(h => h.status === step);
+    const color   = current ? 'color:var(--pink-deep)' : past ? 'color:#16a34a;font-weight:700' : 'color:var(--text-3)';
+    tlHtml += `
+      <div class="tl-item">
+        <div class="tl-dot ${dotCls}">${dotIcon}</div>
+        <div class="tl-content">
+          <div class="tl-status" style="${color}">${info.label}</div>
+          ${hist?.note    ? `<div class="tl-note">${hist.note}</div>` : ''}
+          ${hist?.updatedAt ? `<div class="tl-time">${formatDate(hist.updatedAt)}</div>` : ''}
+        </div>
+      </div>`;
+  });
+
+  const activeBox = o.status === 'active' ? `
+    <div class="status-box active-box">
+      <p class="status-box-title green">Server is Active</p>
+      <p class="status-box-body">Your server credentials have been sent to your email. Check your inbox (including spam folder).</p>
+    </div>` : '';
+
+  const pendingBox = o.status === 'pending' ? `
+    <div class="status-box pending-box">
+      <p class="status-box-body">
+        Your order is in our queue. ${isFree ? 'Our team is reviewing your subscription proof.' : 'Please complete payment so we can provision your server.'}
+        <br/>Expected delivery: <strong>2–12 hours</strong>.
+        <br/>Need help? <a href="https://t.me/Techofy" target="_blank">Chat on Telegram →</a>
+      </p>
+    </div>` : '';
+
+  card.innerHTML = `
+    <div class="result-head">
+      <div class="result-head-top">
+        <span class="result-order-id">ORDER: ${o.orderId}</span>
+        <span class="result-status-badge ${st.cls}">${st.label}</span>
+      </div>
+      <div class="result-plan">${planLabel}</div>
+      <div class="result-plan-sub">${o.planRam || ''} ${isFree ? '· Free Plan' : '· ' + (o.planPrice || '')}</div>
+    </div>
+    <div class="result-body">
+      <div class="detail-grid">
+        <div class="detail-item">
+          <div class="detail-label">Server Type</div>
+          <div class="detail-value">${o.planType || '—'}</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">RAM</div>
+          <div class="detail-value">${o.planRam || '—'}</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Price</div>
+          <div class="detail-value">${isFree ? 'Free' : o.planPrice || '—'}</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Email</div>
+          <div class="detail-value mono">${o.userEmail || '—'}</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Placed</div>
+          <div class="detail-value">${formatDate(o.createdAt)}</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Last Update</div>
+          <div class="detail-value">${formatDate(o.updatedAt || o.createdAt)}</div>
+        </div>
+      </div>
+
+      <div class="timeline-title">Order Timeline</div>
+      <div class="timeline">${tlHtml}</div>
+
+      ${activeBox}
+      ${pendingBox}
+
+      <div class="refresh-row">
+        <button class="refresh-btn" onclick="trackOrder(document.getElementById('trackInput').value.trim())">
+          ↻ Refresh Status
+        </button>
+      </div>
+    </div>`;
+
+  card.classList.remove('hidden');
+  setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
+}
+
+document.getElementById('trackBtn').addEventListener('click', () => {
+  const val = document.getElementById('trackInput').value.trim();
+  const err = document.getElementById('trackErr');
+  if (!val || val.length < 5) {
+    err.textContent = 'Please enter a valid Order ID.';
+    err.classList.remove('hidden');
+    return;
+  }
+  trackOrder(val);
+});
+
+document.getElementById('trackInput').addEventListener('keydown', e => {
+  if (e.key === 'Enter') document.getElementById('trackBtn').click();
+});
+
+// Auto-load from URL param (?id=TC-... or ?order=TC-...)
+const params  = new URLSearchParams(window.location.search);
+const paramId = params.get('id') || params.get('order');
+if (paramId) {
+  document.getElementById('trackInput').value = paramId.toUpperCase();
+  trackOrder(paramId);
+}
+</script>
+
+<script>
+document.addEventListener('contextmenu', e => e.preventDefault());
+document.onkeydown = function(e) {
+  if (
+    e.keyCode === 123 ||
+    (e.ctrlKey && e.shiftKey && [73,74,67].includes(e.keyCode)) ||
+    (e.ctrlKey && e.keyCode === 85)
+  ) { e.preventDefault(); return false; }
+};
+</script>
+</body>
+</html>

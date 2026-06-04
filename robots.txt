@@ -1,0 +1,43 @@
+User-agent: *
+Allow: /
+
+Disallow: /api/
+Disallow: /admin/
+Disallow: /internal/
+Disallow: /tmp/
+Disallow: /uploads/
+Disallow: /*.env$
+Disallow: /*.json$
+Disallow: /*.sql$
+Disallow: /*.log$
+Disallow: /*.git/
+Disallow: /*.config$
+
+Disallow: /*?*
+Disallow: /*&*
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+Sitemap: https://techofy.xyz/sitemap.xml
